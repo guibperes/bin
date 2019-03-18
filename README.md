@@ -6,6 +6,5 @@ More easy then:
 
 ```shell
 code . && exit
+# ¯\_(ツ)_/¯
 ```
-
-> ¯\_(ツ)_/¯
