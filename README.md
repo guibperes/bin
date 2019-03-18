@@ -8,3 +8,5 @@ More easy then:
 code . && exit
 # ¯\_(ツ)_/¯
 ```
+
+Download the `vscode` file and export to bash PATH
