@@ -1,0 +1,4 @@
+#!/bin/bash
+
+code $PWD
+kill -9 $PPID
