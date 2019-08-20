@@ -1,4 +1,11 @@
 #!/bin/bash
 
-code $PWD
+if [ $# -eq 0 ]; then
+  code $PWD
+  kill -9 $PPID
+fi
+
+for i in $*; do
+  code $i
+done
 kill -9 $PPID
