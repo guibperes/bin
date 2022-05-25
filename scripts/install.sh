@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# Gnome Utils installation script
+# Post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
-echo -e "# Gnome Utils installation script"
+echo -e "# Post installation script"
 echo -e "# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin.git $BIN_PATH
+
+echo -e "\n# Gnome configurations"
+echo -e "# Setting Gnome Weather to celsius temperature unit"
+gsettings set org.gnome.GWeather temperature-unit "'centigrade'"
+gsettings set org.gnome.GWeather4 temperature-unit "'centigrade'"
 
 echo -e "\n# Creating directories if they not exists"
 [ ! -d "$HOME/.config" ] &&\
