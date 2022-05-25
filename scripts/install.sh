@@ -36,7 +36,7 @@ echo -e "# ZInit plugins"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" > /dev/null
 
 echo -e "# Starship prompt"
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+sh -c "$(curl -fsSL https://starship.rs/install.sh) -y" > /dev/null
 
 echo -e "\n# Docker installation"
 sudo mkdir -p /etc/apt/keyrings
