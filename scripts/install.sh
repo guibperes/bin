@@ -36,7 +36,7 @@ echo -e "# ZInit plugins"
 curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh | sh > /dev/null
 
 echo -e "# Starship prompt"
-curl -fsSL https://starship.rs/install.sh | sh -y > /dev/null
+yes | curl -fsSL https://starship.rs/install.sh | sh > /dev/null
 
 echo -e "\n# Docker installation"
 sudo mkdir -p /etc/apt/keyrings
@@ -57,7 +57,7 @@ sudo usermod -aG docker $USER
 sudo systemctl enable docker > /dev/null
 
 echo -e "\n# NVM installation"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)" > /dev/null
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh > /dev/null
 
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin.git $BIN_PATH
