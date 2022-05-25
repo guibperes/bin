@@ -30,13 +30,13 @@ sudo apt-get autoclean -y > /dev/null
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh > /dev/null
 
 echo -e "# ZInit plugins"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" > /dev/null
+curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh | sh > /dev/null
 
 echo -e "# Starship prompt"
-sh -c "$(curl -fsSL https://starship.rs/install.sh) -y" > /dev/null
+curl -fsSL https://starship.rs/install.sh | sh -y > /dev/null
 
 echo -e "\n# Docker installation"
 sudo mkdir -p /etc/apt/keyrings
