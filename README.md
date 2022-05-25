@@ -1,6 +1,6 @@
-# Bin configurations
+# Installation script
 
-Configuration repository and script's for my Linux distro.
+Installation, configuration and script's for my linux distro setup.
 
 ## Installation
 ```shell
