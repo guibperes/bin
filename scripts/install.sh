@@ -62,6 +62,9 @@ curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh 
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin.git $BIN_PATH
 
+echo -e "\n# Changing user shell to ZSH"
+sudo chsh -s /bin/zsh $USER
+
 echo -e "\n# Creating directories if they not exists"
 [ ! -d "$HOME/.config" ] && \
 	echo -e "# Creating \$HOME/.config directory" && \
