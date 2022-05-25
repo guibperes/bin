@@ -4,7 +4,7 @@
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
-echo -e "# Starting Post installation script"
+echo -e "\n# Starting Post installation script"
 echo -e "# APT system update and packages installation"
 echo -e "# APT update"
 sudo apt-get update > /dev/null
@@ -30,10 +30,10 @@ sudo apt-get autoclean -y > /dev/null
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null
 
 echo -e "# ZInit plugins"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" > /dev/null
 
 echo -e "# Starship prompt"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
@@ -54,10 +54,10 @@ sudo apt-get install -y \
 	> /dev/null
 
 sudo usermod -aG docker $USER
-sudo systemctl enable docker
+sudo systemctl enable docker > /dev/null
 
 echo -e "\n# NVM installation"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)" > /dev/null
 
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin.git $BIN_PATH
