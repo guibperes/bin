@@ -1,0 +1,4 @@
+# Change to Celsius temperature on Weather
+gsettings set org.gnome.GWeather temperature-unit "'centigrade'"
+gsettings set org.gnome.GWeather4 temperature-unit "'centigrade'"
+
