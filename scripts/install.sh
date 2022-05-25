@@ -36,6 +36,8 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 echo -e "\n# Docker installation"
 sh -c "$(curl -fsSL https://get.docker.com)"
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
 
 echo -e "\n# NVM installation"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
