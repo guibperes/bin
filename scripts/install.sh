@@ -47,11 +47,11 @@ git clone -q https://github.com/guibperes/bin.git $BIN_PATH
 
 echo -e "\n# Creating directories if they not exists"
 [ ! -d "$HOME/.config" ] && \
-	echo -e "Creating \$HOME/.config directory" && \
+	echo -e "# Creating \$HOME/.config directory" && \
 	mkdir $HOME/.config
 
 [ ! -d "$HOME/.config/mpv" ] && \
-	echo -e "Creating \$HOME/.config/mpv directory" && \
+	echo -e "# Creating \$HOME/.config/mpv directory" && \
 	mkdir $HOME/.config/mpv
 
 echo -e "\n# Gnome configurations"
