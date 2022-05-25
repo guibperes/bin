@@ -24,7 +24,23 @@ echo -e "# APT cleanup"
 sudo apt-get autoremove -y > /dev/null
 sudo apt-get autoclean -y > /dev/null
 
-echo -e "# Clonning guibperes/bin github repository"
+echo -e "\n# ZSH installation and configuration"
+echo -e "# Oh My ZSH"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo -e "# ZInit plugins"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+echo -e "# Starship prompt"
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+echo -e "\n# Docker installation"
+sh -c "$(curl -fsSL https://get.docker.com)"
+
+echo -e "\n# NVM installation"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
+
+echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin.git $BIN_PATH
 
 echo -e "\n# Creating directories if they not exists"
@@ -50,6 +66,9 @@ cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
 
 echo -e "# mpv.conf"
 cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
+
+echo -e "# .zshrc"
+cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
 
 echo -e "\n# Finished Post installation script"
 
