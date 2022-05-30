@@ -16,7 +16,6 @@ echo -e "# APT packages installation"
 sudo apt-get install -y \
         zsh \
 	git \
-        xclip \
         mpv \
 	ca-certificates \
 	curl \

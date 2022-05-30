@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-echo "( ͡° ͜ʖ ͡°)" | xclip -sel clip
-echo "Copied lenny face to clipboard"
-exit 0
-
