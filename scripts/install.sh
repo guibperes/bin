@@ -22,6 +22,7 @@ sudo apt-get install -y \
 	curl \
 	gnupg \
 	lsb-release \
+	kitty \
         > /dev/null
 
 echo -e "# APT cleanup"
@@ -74,6 +75,10 @@ echo -e "\n# Creating directories if they not exists"
 	echo -e "# Creating \$HOME/.config/mpv directory" && \
 	mkdir $HOME/.config/mpv
 
+[ ! -d "$HOME/.config/kitty" ] && \
+	echo -e "# Creating \$HOME/.config/kitty directory" && \
+	mkdir $HOME/.config/kitty
+
 echo -e "\n# Gnome configurations"
 echo -e "# Setting Gnome Weather to celsius temperature unit"
 gsettings set org.gnome.GWeather temperature-unit "'centigrade'"
@@ -91,6 +96,10 @@ cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
 
 echo -e "# .zshrc"
 cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
+
+echo -e "# .kitty.conf"
+cp $BIN_PATH/configs/gruvbox-dark.conf $HOME/.config/kitty/gruvbox-dark.conf
+cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
 
