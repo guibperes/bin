@@ -23,7 +23,7 @@ zinit light zsh-users/zsh-completions
 
 # User configurations
 # .bin folder
-export PATH=$PATH:$HOME/.bin
+export PATH=$PATH:$HOME/.bin/cli
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
