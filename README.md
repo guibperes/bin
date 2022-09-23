@@ -11,4 +11,3 @@ curl -fsSL https://raw.githubusercontent.com/guibperes/bin/master/install.sh | b
 - [Tokyo Night GTK](https://www.gnome-look.org/p/1681315)
 - [Simp1e Cursors](https://www.gnome-look.org/p/1405210)
 - [PopOS Shell](https://github.com/pop-os/shell)
-- [PopOS Launcher](https://github.com/pop-os/launcher)
