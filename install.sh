@@ -1,21 +1,31 @@
 #!/bin/bash
 
-# Post installation script
+# Debian testing post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
 echo -e "\n# Starting Post installation script"
-echo -e "# APT system update and packages installation"
+echo -e "# Clonning guibperes/bin github repository"
+git clone -q https://github.com/bin $BIN_PATH
+
+echo -e "# DPKG adding 32 bits architecture"
+sudo dpkg --add-architecture i386
+
+echo -e "\n# APT system update and packages installation"
+echo -e "# Moving APT sources.list file"
+sudo mv $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
+
 echo -e "# APT update"
 sudo apt-get update > /dev/null
 
 echo -e "# APT packages upgrade"
 sudo apt-get upgrade -y > /dev/null
+sudo apt-get dist-upgrade -y > /dev/null
 
 echo -e "# APT packages installation"
 sudo apt-get install -y \
         zsh \
-	git \
+	vim \
         mpv \
 	ca-certificates \
 	curl \
@@ -23,11 +33,34 @@ sudo apt-get install -y \
 	lsb-release \
 	kitty \
 	build-essential \
+	docker.io \
+	flatpak \
+	gnome-software-plugin-flatpak \
+	winbind \
+	libavcodec-extra \
+	unrar \
+	gstreamer1.0-libav \
+	gstreamer1.0-plugins-ugly \
+	gstreamer1.0-vaapi \
+	ttf-mscorefonts-installer \
+	cups \
+	wine \
+	winetricks \
         > /dev/null
 
 echo -e "# APT cleanup"
 sudo apt-get autoremove -y > /dev/null
 sudo apt-get autoclean -y > /dev/null
+
+echo -e "\n# Flatpak installation"
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub \
+	com.valvesoftware.Steam \
+	com.heroicgameslauncher.hgl \
+	com.spotify.Client \
+	com.discordapp.Discord \
+	org.gimp.GIMP \
+	org.signal.Signal
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
@@ -39,17 +72,12 @@ curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/script
 echo -e "# Starship prompt"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
-echo -e "\n# Docker installation"
-curl -fsSL https://get.docker.com | sh
-
+echo -e "\n# Docker post install"
 sudo usermod -aG docker $USER
 sudo systemctl enable docker > /dev/null
 
 echo -e "\n# NVM installation"
 curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh > /dev/null
-
-echo -e "\n# Clonning guibperes/bin github repository"
-git clone -q https://github.com/guibperes/bin.git $BIN_PATH
 
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER

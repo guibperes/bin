@@ -1,0 +1,7 @@
+# Debian packages for stable
+deb http://debian.c3sl.ufpr.br/debian/ testing main contrib non-free
+
+# Uncomment the deb-src line if you want 'apt-get source'
+# to work with most packages.
+# deb-src http://debian.c3sl.ufpr.br/debian/ testing main contrib non-free
+
