@@ -16,11 +16,11 @@ echo -e "# Moving APT sources.list file"
 sudo cp $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
 
 echo -e "# APT update"
-sudo apt-get update > /dev/null
+sudo apt-get update
 
 echo -e "# APT packages upgrade"
-sudo apt-get upgrade -y > /dev/null
-sudo apt-get dist-upgrade -y > /dev/null
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 echo -e "# APT packages installation"
 sudo apt-get install -y \
@@ -55,12 +55,11 @@ sudo apt-get install -y \
 	vulkan-tools \
 	vulkan-utils \
 	vulkan-validationlayers \
-	mesa-opencl-icd \
-        > /dev/null
+	mesa-opencl-icd
 
 echo -e "# APT cleanup"
-sudo apt-get autoremove -y > /dev/null
-sudo apt-get autoclean -y > /dev/null
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
 
 echo -e "\n# Flatpak installation"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -74,20 +73,20 @@ flatpak install -y flathub \
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh > /dev/null
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 
 echo -e "# ZInit plugins"
-curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh | sh > /dev/null
+curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh | sh
 
 echo -e "# Starship prompt"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
 echo -e "\n# Docker post install"
 sudo usermod -aG docker $USER
-sudo systemctl enable docker > /dev/null
+sudo systemctl enable docker
 
 echo -e "\n# NVM installation"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh > /dev/null
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh
 
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
