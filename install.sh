@@ -86,7 +86,7 @@ sudo usermod -aG docker $USER
 sudo systemctl enable docker
 
 echo -e "\n# NVM installation"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
 
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
