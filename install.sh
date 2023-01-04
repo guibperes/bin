@@ -46,6 +46,16 @@ sudo apt-get install -y \
 	cups \
 	wine \
 	winetricks \
+	firmware-linux \
+	firmware-linux-nonfree \
+	libdrm-amdgpu1 \
+	xserver-xorg-video-amdgpu \
+	mesa-vulkan-drivers \
+	libvulkan1 \
+	vulkan-tools \
+	vulkan-utils \
+	vulkan-validationlayers \
+	mesa-opencl-icd \
         > /dev/null
 
 echo -e "# APT cleanup"
