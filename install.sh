@@ -13,7 +13,7 @@ sudo dpkg --add-architecture i386
 
 echo -e "\n# APT system update and packages installation"
 echo -e "# Moving APT sources.list file"
-sudo mv $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
+sudo cp $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
 
 echo -e "# APT update"
 sudo apt-get update > /dev/null
