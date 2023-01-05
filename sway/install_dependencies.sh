@@ -6,4 +6,5 @@ sudo apt install -y \
     swaylock \
     wofi \
     playerctl \
-    pamixer
+    pamixer \
+    waybar
