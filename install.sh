@@ -69,7 +69,8 @@ flatpak install -y flathub \
 	com.spotify.Client \
 	com.discordapp.Discord \
 	org.gimp.GIMP \
-	org.signal.Signal
+	org.signal.Signal \
+	org.ferdium.Ferdium
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
