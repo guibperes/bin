@@ -24,9 +24,9 @@ sudo apt dist-upgrade -y
 
 echo -e "# APT packages installation"
 sudo apt install -y \
-        zsh \
+	zsh \
 	vim \
-        mpv \
+	mpv \
 	ca-certificates \
 	curl \
 	gnupg \
@@ -118,4 +118,3 @@ cp $BIN_PATH/configs/gruvbox-dark.conf $HOME/.config/kitty/gruvbox-dark.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
-
