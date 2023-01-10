@@ -24,30 +24,15 @@ sudo apt dist-upgrade -y
 
 echo -e "# APT packages installation"
 sudo apt install -y \
-	zsh \
-	vim \
-	mpv \
-	ca-certificates \
 	curl \
+	ca-certificates \
 	gnupg \
 	lsb-release \
-	kitty \
 	build-essential \
 	docker.io \
-	flatpak \
-	gnome-software-plugin-flatpak \
-	winbind \
-	libavcodec-extra \
-	unrar \
 	gstreamer1.0-libav \
 	gstreamer1.0-plugins-ugly \
 	gstreamer1.0-vaapi \
-	ttf-mscorefonts-installer \
-	cups \
-	wine \
-	winetricks \
-	firmware-linux \
-	firmware-linux-nonfree \
 	libdrm-amdgpu1 \
 	xserver-xorg-video-amdgpu \
 	mesa-vulkan-drivers \
@@ -55,7 +40,22 @@ sudo apt install -y \
 	vulkan-tools \
 	vulkan-utils \
 	vulkan-validationlayers \
-	mesa-opencl-icd
+	mesa-opencl-icd \
+	firmware-linux \
+	firmware-linux-nonfree \
+	wine \
+	winetricks \
+	winbind \
+	libavcodec-extra \
+	unrar \
+	ttf-mscorefonts-installer \
+	cups \
+	flatpak \
+	gnome-software-plugin-flatpak \
+	zsh \
+	vim \
+	mpv \
+	kitty
 
 echo -e "# APT cleanup"
 sudo apt autoremove -y
