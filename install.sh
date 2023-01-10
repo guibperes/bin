@@ -93,17 +93,8 @@ echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
 
 echo -e "\n# Creating directories if they not exists"
-[ ! -d "$HOME/.config" ] && \
-	echo -e "# Creating \$HOME/.config directory" && \
-	mkdir $HOME/.config
-
-[ ! -d "$HOME/.config/mpv" ] && \
-	echo -e "# Creating \$HOME/.config/mpv directory" && \
-	mkdir $HOME/.config/mpv
-
-[ ! -d "$HOME/.config/kitty" ] && \
-	echo -e "# Creating \$HOME/.config/kitty directory" && \
-	mkdir $HOME/.config/kitty
+mkdir -p $HOME/.config/mpv
+mkdir -p $HOME/.config/kitty
 
 echo -e "\n# Gnome configurations"
 echo -e "\n# Papirus icon theme install"
