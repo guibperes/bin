@@ -92,10 +92,6 @@ curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
 
-echo -e "\n# Creating directories if they not exists"
-mkdir -p $HOME/.config/mpv
-mkdir -p $HOME/.config/kitty
-
 echo -e "\n# Gnome configurations"
 echo -e "\n# Papirus icon theme install"
 curl -fsSL https://git.io/papirus-icon-theme-install | sh
@@ -108,12 +104,14 @@ echo -e "# starship.toml"
 cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
 
 echo -e "# mpv.conf"
+mkdir -p $HOME/.config/mpv
 cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
 
 echo -e "# .zshrc"
 cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
 
 echo -e "# .kitty.conf"
+mkdir -p $HOME/.config/kitty
 cp $BIN_PATH/configs/gruvbox-dark.conf $HOME/.config/kitty/gruvbox-dark.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
