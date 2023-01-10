@@ -16,14 +16,14 @@ echo -e "# Moving APT sources.list file"
 sudo cp $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
 
 echo -e "# APT update"
-sudo apt-get update
+sudo apt update
 
 echo -e "# APT packages upgrade"
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
 
 echo -e "# APT packages installation"
-sudo apt-get install -y \
+sudo apt install -y \
         zsh \
 	vim \
         mpv \
@@ -58,8 +58,8 @@ sudo apt-get install -y \
 	mesa-opencl-icd
 
 echo -e "# APT cleanup"
-sudo apt-get autoremove -y
-sudo apt-get autoclean -y
+sudo apt autoremove -y
+sudo apt autoclean -y
 
 echo -e "\n# Flatpak installation"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
