@@ -6,7 +6,7 @@ BIN_PATH=$HOME/$BIN_NAME
 
 echo -e "\n# Starting Post installation script"
 echo -e "# Clonning guibperes/bin github repository"
-git clone -q https://github.com/bin $BIN_PATH
+git clone -q https://github.com/guibperes/bin $BIN_PATH
 
 echo -e "# DPKG adding 32 bits architecture"
 sudo dpkg --add-architecture i386
@@ -38,7 +38,6 @@ sudo apt install -y \
 	mesa-vulkan-drivers \
 	libvulkan1 \
 	vulkan-tools \
-	vulkan-utils \
 	vulkan-validationlayers \
 	mesa-opencl-icd \
 	firmware-linux \
@@ -55,7 +54,9 @@ sudo apt install -y \
 	zsh \
 	vim \
 	mpv \
-	kitty
+	kitty \
+	nala \
+	yt-dlp
 
 echo -e "# APT cleanup"
 sudo apt autoremove -y
@@ -112,7 +113,7 @@ cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
 
 echo -e "# .kitty.conf"
 mkdir -p $HOME/.config/kitty
-cp $BIN_PATH/configs/gruvbox-dark.conf $HOME/.config/kitty/gruvbox-dark.conf
+cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
