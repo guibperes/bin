@@ -5,7 +5,10 @@ BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
 echo -e "\n# Starting Post installation script"
-echo -e "# Clonning guibperes/bin github repository"
+echo -e "# Installing git"
+sudo apt install -y git
+
+echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
 
 echo -e "# DPKG adding 32 bits architecture"
@@ -72,6 +75,9 @@ flatpak install -y flathub \
 	org.gimp.GIMP \
 	org.signal.Signal \
 	org.ferdium.Ferdium
+
+echo -e "\n# Nala package manager configuration"
+nala --install-completion zsh
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
