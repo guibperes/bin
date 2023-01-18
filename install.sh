@@ -59,7 +59,8 @@ sudo apt install -y \
 	mpv \
 	kitty \
 	nala \
-	yt-dlp
+	yt-dlp \
+	chrony
 
 echo -e "# APT cleanup"
 sudo apt autoremove -y
@@ -78,6 +79,10 @@ flatpak install -y flathub \
 
 echo -e "\n# Nala package manager configuration"
 nala --install-completion zsh
+
+echo -e "\n# NTP clock setup and sync"
+sudo systemctl enable --now chrony
+sudo timedatectl set-ntp true
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
