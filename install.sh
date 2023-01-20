@@ -74,7 +74,7 @@ sudo apt autoclean -y
 
 echo -e "\n# Flatpak installation"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub \
+flatpak install --noninteractive -y flathub \
 	com.valvesoftware.Steam \
 	com.heroicgameslauncher.hgl \
 	com.spotify.Client \
