@@ -3,6 +3,7 @@
 # Debian testing post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
+APT_PATH=$BIN_PATH/configs/apt
 
 echo -e "\n# Starting Post installation script"
 echo -e "# Installing git"
@@ -16,7 +17,10 @@ sudo dpkg --add-architecture i386
 
 echo -e "\n# APT system update and packages installation"
 echo -e "# Moving APT sources.list file"
-sudo cp $BIN_PATH/configs/apt.sources.list /etc/apt/sources.list
+sudo cp $APT_PATH/sources.list /etc/apt/sources.list
+sudo cp $APT_PATH/vscode.list /etc/apt/sources.list.d/vscode.list
+sudo cp $APT_PATH/brave-browser.list /etc/apt/sources.list.d/brave-browser.list
+sudo cp $APT_PATH/brave-browser-archive-keyring.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg
 
 echo -e "# APT update"
 sudo apt update
@@ -60,7 +64,9 @@ sudo apt install -y \
 	kitty \
 	nala \
 	yt-dlp \
-	chrony
+	chrony \
+	code \
+	brave-browser
 
 echo -e "# APT cleanup"
 sudo apt autoremove -y
@@ -128,3 +134,4 @@ cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
+
