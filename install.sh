@@ -91,7 +91,8 @@ flatpak install --noninteractive -y flathub \
 	com.discordapp.Discord \
 	org.gimp.GIMP \
 	org.signal.Signal \
-	org.ferdium.Ferdium
+	org.ferdium.Ferdium \
+	fr.handbrake.ghb
 
 echo -e "\n# Nala package manager configuration"
 nala --install-completion zsh
