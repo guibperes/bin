@@ -85,6 +85,7 @@ sudo apt remove -y \
 	rhythmbox \
 	evolution \
 	totem \
+	shotwell \
 	gnome-games \
 	gnome-contacts \
 	gnome-maps \
