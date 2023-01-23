@@ -94,13 +94,6 @@ flatpak install --noninteractive -y flathub \
 	org.ferdium.Ferdium \
 	fr.handbrake.ghb
 
-echo -e "\n# Nala package manager configuration"
-nala --install-completion zsh
-
-echo -e "\n# NTP clock setup and sync"
-sudo systemctl enable --now chrony
-sudo timedatectl set-ntp true
-
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
@@ -111,19 +104,25 @@ curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/script
 echo -e "# Starship prompt"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
+echo -e "\n# NVM installation"
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
+
+echo -e "\n# Papirus icon theme install"
+curl -fsSL https://git.io/papirus-icon-theme-install | sh
+
+echo -e "\n# Nala package manager configuration"
+nala --install-completion zsh
+
+echo -e "\n# NTP clock setup and sync"
+sudo systemctl enable --now chrony
+sudo timedatectl set-ntp true
+
 echo -e "\n# Docker post install"
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
 
-echo -e "\n# NVM installation"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
-
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
-
-echo -e "\n# Gnome configurations"
-echo -e "\n# Papirus icon theme install"
-curl -fsSL https://git.io/papirus-icon-theme-install | sh
 
 echo -e "\n# Copying configuration files"
 echo -e "# .XCompose"
