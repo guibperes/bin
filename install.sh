@@ -78,6 +78,19 @@ sudo apt install -y \
 	code \
 	brave-browser
 
+echo -e "# APT removing unnecessary packages"
+sudo apt remove -y \
+	cheese \
+	synaptic \
+	rhythmbox \
+	evolution \
+	totem \
+	gnome-games \
+	gnome-contacts \
+	gnome-maps \
+	gnome-music \
+	gnome-sound-recorder
+
 echo -e "# APT cleanup"
 sudo apt autoremove -y
 sudo apt autoclean -y
