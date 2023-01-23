@@ -6,8 +6,12 @@ BIN_PATH=$HOME/$BIN_NAME
 APT_PATH=$BIN_PATH/configs/apt
 
 echo -e "\n# Starting Post installation script"
-echo -e "# Installing git"
-sudo apt install -y git
+echo -e "# Installing necessary packages"
+sudo apt install -y \
+	git \
+	gpg \
+	apt-transport-https \
+	curl
 
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
@@ -16,11 +20,18 @@ echo -e "# DPKG adding 32 bits architecture"
 sudo dpkg --add-architecture i386
 
 echo -e "\n# APT system update and packages installation"
-echo -e "# Moving APT sources.list file"
+echo -e "# Debian APT repository"
 sudo cp $APT_PATH/sources.list /etc/apt/sources.list
+
+echo -e "# VSCode APT repository"
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 sudo cp $APT_PATH/vscode.list /etc/apt/sources.list.d/vscode.list
-sudo cp $APT_PATH/brave-browser.list /etc/apt/sources.list.d/brave-browser.list
-sudo cp $APT_PATH/brave-browser-archive-keyring.gpg /usr/share/keyrings/brave-browser-archive-keyring.gpg
+rm -f packages.microsoft.gpg
+
+echo -e "# Brave Browser APT repository"
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+sudo cp $APT_PATH/brave-browser.list /etc/apt/sources.list.d/brave-browser-release.list
 
 echo -e "# APT update"
 sudo apt update
@@ -31,7 +42,6 @@ sudo apt dist-upgrade -y
 
 echo -e "# APT packages installation"
 sudo apt install -y \
-	curl \
 	ca-certificates \
 	gnupg \
 	lsb-release \

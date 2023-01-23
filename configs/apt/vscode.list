@@ -1,2 +1,2 @@
-deb [arch=amd64] http://packages.microsoft.com/repos/code stable main
+deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main
 
