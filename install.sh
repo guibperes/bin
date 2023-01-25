@@ -106,7 +106,8 @@ flatpak install --noninteractive -y flathub \
 	org.gimp.GIMP \
 	org.signal.Signal \
 	org.ferdium.Ferdium \
-	fr.handbrake.ghb
+	fr.handbrake.ghb \
+	rest.insomnia.Insomnia
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"
