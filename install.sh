@@ -123,7 +123,7 @@ echo -e "# Starship prompt"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
 echo -e "\n# NVM installation"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 echo -e "\n# Papirus icon theme install"
 curl -fsSL https://git.io/papirus-icon-theme-install | sh
