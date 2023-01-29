@@ -74,6 +74,7 @@ sudo apt install -y \
 	kitty \
 	nala \
 	yt-dlp \
+	python3-pip \
 	chrony \
 	code \
 	brave-browser
@@ -125,6 +126,9 @@ curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | sh
 echo -e "\n# Papirus icon theme install"
 curl -fsSL https://git.io/papirus-icon-theme-install | sh
 
+echo -e "\n# Pip install yt-dlp dependencies"
+python3 -m pip install secretstorage
+
 echo -e "\n# Nala package manager configuration"
 nala --install-completion zsh
 
@@ -134,7 +138,7 @@ sudo timedatectl set-ntp true
 
 echo -e "\n# Docker post install"
 sudo usermod -aG docker $USER
-sudo systemctl enable docker
+sudo systemctl enable --now docker
 
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
