@@ -3,6 +3,7 @@
 # ArchLinux post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
+
 GIT_USER_NAME="Guilherme Beidaki Peres"
 GIT_USER_EMAIL="guibperes@protonmail.com"
 
@@ -64,9 +65,9 @@ sudo pacman -S --noconfirm \
 
 echo -e "# Yay AUR package manager installation"
 sudo pacman -S --needed --noconfirm base-devel
-git clone https://aur.archlinux.org/yay.git $BIN_PATH/yay
+git clone -q https://aur.archlinux.org/yay.git $BIN_PATH/yay
 cd $BIN_PATH/yay
-makepkg -si
+makepkg -si --noconfirm
 cd $BIN_PATH
 rm -rf $BIN_PATH/yay
 yay -Y --gendb
