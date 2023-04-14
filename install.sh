@@ -20,7 +20,7 @@ echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
 
 echo -e "\n# Pacman package manager configuration"
-sudo cp configs/pacman.conf /etc/pacman.conf
+sudo cp $BIN_PATH/configs/pacman.conf /etc/pacman.conf
 
 echo -e "# Full system update"
 sudo pacman -Syu --noconfirm
