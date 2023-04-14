@@ -13,6 +13,7 @@ GIT_USER_EMAIL="guibperes@protonmail.com"
 # - Keyboard shorcut open nautilus Super+F
 # - Extensions install and config
 # - Setting user display name and picture
+# - Removing default not used apps
 
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
