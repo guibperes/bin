@@ -1,104 +1,73 @@
 #!/bin/bash
 
-# Debian testing post installation script
+# ArchLinux post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
-APT_PATH=$BIN_PATH/configs/apt
+GIT_USER_NAME="Guilherme Beidaki Peres"
+GIT_USER_EMAIL="guibperes@protonmail.com"
 
 echo -e "\n# Starting Post installation script"
-echo -e "# Installing necessary packages"
-sudo apt install -y \
-	git \
-	gpg \
-	apt-transport-https \
-	curl
-
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
 
-echo -e "# DPKG adding 32 bits architecture"
-sudo dpkg --add-architecture i386
+echo -e "\n# Pacman package manager configuration"
+sudo cp configs/pacman.conf /etc/pacman.conf
 
-echo -e "\n# APT system update and packages installation"
-echo -e "# Debian APT repository"
-sudo cp $APT_PATH/sources.list /etc/apt/sources.list
+echo -e "# Full system update"
+sudo pacman -Syu --noconfirm
 
-echo -e "# VSCode APT repository"
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-sudo cp $APT_PATH/vscode.list /etc/apt/sources.list.d/vscode.list
-rm -f packages.microsoft.gpg
-
-echo -e "# Brave Browser APT repository"
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-sudo cp $APT_PATH/brave-browser.list /etc/apt/sources.list.d/brave-browser-release.list
-
-echo -e "# APT update"
-sudo apt update
-
-echo -e "# APT packages upgrade"
-sudo apt upgrade -y
-sudo apt dist-upgrade -y
-
-echo -e "# APT packages installation"
-sudo apt install -y \
-	ca-certificates \
-	gnupg \
-	lsb-release \
-	build-essential \
-	docker.io \
-	gstreamer1.0-libav \
-	gstreamer1.0-plugins-ugly \
-	gstreamer1.0-vaapi \
-	libdrm-amdgpu1 \
-	xserver-xorg-video-amdgpu \
-	mesa-vulkan-drivers \
-	libvulkan1 \
-	vulkan-tools \
-	vulkan-validationlayers \
-	mesa-opencl-icd \
-	firmware-linux \
-	firmware-linux-nonfree \
+echo -e "# Packages installation"
+sudo pacman -S --noconfirm \
+	gst-plugins-ugly \
+	gst-plugins-good \
+	gst-plugins-base \
+	gst-plugins-bad \
+	gst-libav \
+	gstreamer \
+	os-prober \
+	ntfs-3g \
+	gnome-software-packagekit-plugin \
+	fwupd \
 	wine \
-	winetricks \
-	winbind \
-	libavcodec-extra \
-	unrar \
-	ttf-mscorefonts-installer \
-	cups \
-	flatpak \
-	gnome-software-plugin-flatpak \
-	zsh \
+	neofetch \
+	git \
 	vim \
+	zsh \
+	curl \
+	ffmpeg \
 	mpv \
 	kitty \
-	nala \
+	unrar \
+	docker \
+	docker-compose \
 	yt-dlp \
-	python3-pip \
-	chrony \
 	code \
-	brave-browser
+	piper \
+	simple-scan \
+	cups \
+	hplip \
+	noto-fonts \
+	noto-fonts-emoji \
+	noto-fonts-cjk \
+	ttf-jetbrains-mono \
+	jq \
+	firefox
 
-echo -e "# APT removing unnecessary packages"
-sudo apt remove -y \
-	cheese \
-	synaptic \
-	rhythmbox \
-	evolution \
-	totem \
-	shotwell \
-	gnome-games \
-	gnome-contacts \
-	gnome-maps \
-	gnome-music \
-	gnome-sound-recorder
+echo -e "# Yay AUR package manager installation"
+sudo pacman -S --needed --noconfirm base-devel
+git clone https://aur.archlinux.org/yay.git $BIN_PATH/yay
+cd $BIN_PATH/yay
+makepkg -si
+cd $BIN_PATH
+rm -rf $BIN_PATH/yay
+yay -Y --gendb
 
-echo -e "# APT cleanup"
-sudo apt autoremove -y
-sudo apt autoclean -y
+echo -e "# Yay packages installation"
+yay -S --noconfirm \
+	gnome-shell-extension-pop-shell-git \
+	brave-bin
 
 echo -e "\n# Flatpak installation"
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --noninteractive -y flathub \
 	com.valvesoftware.Steam \
 	com.heroicgameslauncher.hgl \
@@ -109,7 +78,6 @@ flatpak install --noninteractive -y flathub \
 	org.ferdium.Ferdium \
 	fr.handbrake.ghb \
 	rest.insomnia.Insomnia \
-	app.drey.Dialect \
 	org.gnome.World.Secrets
 
 echo -e "\n# ZSH installation and configuration"
@@ -128,22 +96,25 @@ curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 echo -e "\n# Papirus icon theme install"
 curl -fsSL https://git.io/papirus-icon-theme-install | sh
 
-echo -e "\n# Pip install yt-dlp dependencies"
-python3 -m pip install secretstorage
-
-echo -e "\n# Nala package manager configuration"
-nala --install-completion zsh
-
-echo -e "\n# NTP clock setup and sync"
-sudo systemctl enable --now chrony
-sudo timedatectl set-ntp true
-
 echo -e "\n# Docker post install"
 sudo usermod -aG docker $USER
 sudo systemctl enable --now docker
 
 echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
+
+echo -e "\n# Bluetooth service deamon start"
+sudo systemctl enable bluetooth.service --now
+
+echo -e "\n# Pop Shell keyboard shortcuts config"
+/usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
+
+echo -e "\n# Font cache update"
+fc-cache -fv
+
+echo -e "\n# Git global configs"
+git config --global user.name $GIT_USER_NAME
+git config --global user.email $GIT_USER_EMAIL
 
 echo -e "\n# Copying configuration files"
 echo -e "# .XCompose"
