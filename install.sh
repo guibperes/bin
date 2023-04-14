@@ -2,8 +2,6 @@
 
 # ArchLinux post installation script
 # TODO
-# - File for packages list (pacman, yay, flatpak)
-
 # - nvm install --lts
 # - Keyboard set English (US, alt. intl.) and English (US)
 # - Keyboard shorcut open kitty terminal Super+T
@@ -23,9 +21,6 @@
 
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
-
-GIT_USER_NAME="Guilherme Beidaki Peres"
-GIT_USER_EMAIL="guibperes@protonmail.com"
 
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
@@ -86,10 +81,6 @@ yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configur
 
 echo -e "\n# Font cache update"
 fc-cache -fv
-
-echo -e "\n# Git global configs"
-git config --global user.name $GIT_USER_NAME
-git config --global user.email $GIT_USER_EMAIL
 
 echo -e "\n# Copying configuration files"
 echo -e "# .XCompose"
