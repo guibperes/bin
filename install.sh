@@ -26,16 +26,12 @@ echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
 
-echo -e "\n# Pacman package manager configuration"
+echo -e "\n# Pacman package manager full system update and packages install"
 sudo cp $BIN_PATH/configs/pacman.conf /etc/pacman.conf
-
-echo -e "# Full system update"
 sudo pacman -Syu --noconfirm
-
-echo -e "# Packages installation"
 sudo pacman -S --noconfirm - < $BIN_PATH/packages/pacman.txt
 
-echo -e "# Yay AUR package manager installation"
+echo -e "\n# Yay AUR package manager installation, configuration and package install"
 sudo pacman -S --needed --noconfirm base-devel
 git clone -q https://aur.archlinux.org/yay.git $BIN_PATH/yay
 cd $BIN_PATH/yay
@@ -43,8 +39,6 @@ makepkg -si --noconfirm
 cd $BIN_PATH
 rm -rf $BIN_PATH/yay
 yay -Y --gendb
-
-echo -e "# Yay packages installation"
 cat $BIN_PATH/packages/yay.txt | xargs yay -S --noconfirm
 
 echo -e "\n# Flatpak installation"
