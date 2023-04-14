@@ -6,6 +6,14 @@ BIN_PATH=$HOME/$BIN_NAME
 GIT_USER_NAME="Guilherme Beidaki Peres"
 GIT_USER_EMAIL="guibperes@protonmail.com"
 
+# TODO
+# - nvm install --lts
+# - Keyboard set English (US, alt. intl.) and English (US)
+# - Keyboard shorcut open kitty terminal Super+T
+# - Keyboard shorcut open nautilus Super+F
+# - Extensions install and config
+# - Setting user display name and picture
+
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
