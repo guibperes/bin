@@ -1,24 +1,6 @@
 #!/bin/bash
 
 # ArchLinux post installation script
-# TODO
-# - nvm install --lts
-# - Keyboard set English (US, alt. intl.) and English (US)
-# - Keyboard shorcut open kitty terminal Super+T
-# - Keyboard shorcut open nautilus Super+F
-# - Setting user display name and picture
-# - Removing default not used apps
-# - Ferdium config
-# - Hanbrake config
-# - Papirus icon set
-# - Weather setting city and celsius degree
-# - Extensions install and config
-# - appindicatorsupport@rgcjonas.gmail.com
-# - dash-to-dock@micxgx.gmail.com
-# - vertical-overview@RensAlthuis.github.com
-# - Vitals@CoreCoding.com
-# - WallpaperSwitcher@Rishu
-
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
@@ -38,6 +20,7 @@ cd $BIN_PATH/yay
 makepkg -si --noconfirm
 cd $BIN_PATH
 rm -rf $BIN_PATH/yay
+
 yay -Y --gendb
 cat $BIN_PATH/packages/yay.txt | xargs yay -S --noconfirm
 
@@ -60,38 +43,22 @@ curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 echo -e "\n# Papirus icon theme install"
 curl -fsSL https://git.io/papirus-icon-theme-install | sh
 
-echo -e "\n# Docker post install"
+echo -e "\n# Systemctl enable and starting services"
+cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
+
+echo -e "\n# User configurations"
 sudo usermod -aG docker $USER
-sudo systemctl enable --now docker
-
-echo -e "\n# Changing user shell to ZSH"
 sudo chsh -s /bin/zsh $USER
-
-echo -e "\n# Bluetooth service deamon start"
-sudo systemctl enable bluetooth.service --now
-
-echo -e "\n# Pop Shell keyboard shortcuts config"
 yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
-
-echo -e "\n# Font cache update"
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
-echo -e "# .XCompose"
+mkdir -p $HOME/.config/mpv $HOME/.config/kitty
+
 cp $BIN_PATH/configs/.XCompose $HOME/.XCompose
-
-echo -e "# starship.toml"
 cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
-
-echo -e "# mpv.conf"
-mkdir -p $HOME/.config/mpv
 cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
-
-echo -e "# .zshrc"
 cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
-
-echo -e "# .kitty.conf"
-mkdir -p $HOME/.config/kitty
 cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
