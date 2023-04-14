@@ -117,7 +117,7 @@ echo -e "\n# Bluetooth service deamon start"
 sudo systemctl enable bluetooth.service --now
 
 echo -e "\n# Pop Shell keyboard shortcuts config"
-/usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
+yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
 
 echo -e "\n# Font cache update"
 fc-cache -fv
