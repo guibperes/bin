@@ -1,13 +1,9 @@
 #!/bin/bash
 
 # ArchLinux post installation script
-BIN_NAME=.bin
-BIN_PATH=$HOME/$BIN_NAME
-
-GIT_USER_NAME="Guilherme Beidaki Peres"
-GIT_USER_EMAIL="guibperes@protonmail.com"
-
 # TODO
+# - File for packages list (pacman, yay, flatpak)
+
 # - nvm install --lts
 # - Keyboard set English (US, alt. intl.) and English (US)
 # - Keyboard shorcut open kitty terminal Super+T
@@ -18,13 +14,18 @@ GIT_USER_EMAIL="guibperes@protonmail.com"
 # - Hanbrake config
 # - Papirus icon set
 # - Weather setting city and celsius degree
-# - File for packages list (pacman, yay, flatpak)
 # - Extensions install and config
 # - appindicatorsupport@rgcjonas.gmail.com
 # - dash-to-dock@micxgx.gmail.com
 # - vertical-overview@RensAlthuis.github.com
 # - Vitals@CoreCoding.com
 # - WallpaperSwitcher@Rishu
+
+BIN_NAME=.bin
+BIN_PATH=$HOME/$BIN_NAME
+
+GIT_USER_NAME="Guilherme Beidaki Peres"
+GIT_USER_EMAIL="guibperes@protonmail.com"
 
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
@@ -37,41 +38,7 @@ echo -e "# Full system update"
 sudo pacman -Syu --noconfirm
 
 echo -e "# Packages installation"
-sudo pacman -S --noconfirm \
-	gst-plugins-ugly \
-	gst-plugins-good \
-	gst-plugins-base \
-	gst-plugins-bad \
-	gst-libav \
-	gstreamer \
-	os-prober \
-	ntfs-3g \
-	gnome-software-packagekit-plugin \
-	fwupd \
-	wine \
-	neofetch \
-	git \
-	vim \
-	zsh \
-	curl \
-	ffmpeg \
-	mpv \
-	kitty \
-	unrar \
-	docker \
-	docker-compose \
-	yt-dlp \
-	code \
-	piper \
-	simple-scan \
-	cups \
-	hplip \
-	noto-fonts \
-	noto-fonts-emoji \
-	noto-fonts-cjk \
-	ttf-jetbrains-mono \
-	jq \
-	firefox
+sudo pacman -S --noconfirm - < $BIN_PATH/packages/pacman.txt
 
 echo -e "# Yay AUR package manager installation"
 sudo pacman -S --needed --noconfirm base-devel
@@ -83,22 +50,10 @@ rm -rf $BIN_PATH/yay
 yay -Y --gendb
 
 echo -e "# Yay packages installation"
-yay -S --noconfirm \
-	gnome-shell-extension-pop-shell-git \
-	brave-bin
+cat $BIN_PATH/packages/yay.txt | xargs yay -S --noconfirm
 
 echo -e "\n# Flatpak installation"
-flatpak install --noninteractive -y flathub \
-	com.valvesoftware.Steam \
-	com.heroicgameslauncher.hgl \
-	com.spotify.Client \
-	com.discordapp.Discord \
-	org.gimp.GIMP \
-	org.signal.Signal \
-	org.ferdium.Ferdium \
-	fr.handbrake.ghb \
-	rest.insomnia.Insomnia \
-	org.gnome.World.Secrets
+cat $BIN_PATH/packages/flatpak.txt | xargs flatpak install --noninteractive -y flathub
 
 echo -e "\n# ZSH installation and configuration"
 echo -e "# Oh My ZSH"

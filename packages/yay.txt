@@ -1,0 +1,2 @@
+gnome-shell-extension-pop-shell-git
+brave-bin

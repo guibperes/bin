@@ -1,0 +1,10 @@
+com.valvesoftware.Steam
+com.heroicgameslauncher.hgl
+com.spotify.Client
+com.discordapp.Discord
+org.gimp.GIMP
+org.signal.Signal
+org.ferdium.Ferdium
+fr.handbrake.ghb
+rest.insomnia.Insomnia
+org.gnome.World.Secrets
