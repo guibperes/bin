@@ -27,22 +27,6 @@ cat $BIN_PATH/packages/yay.txt | xargs yay -S --noconfirm
 echo -e "\n# Flatpak installation"
 cat $BIN_PATH/packages/flatpak.txt | xargs flatpak install --noninteractive -y flathub
 
-echo -e "\n# ZSH installation and configuration"
-echo -e "# Oh My ZSH"
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
-
-echo -e "# ZInit plugins"
-curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh | sh
-
-echo -e "# Starship prompt"
-sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
-
-echo -e "\n# NVM installation"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-
-echo -e "\n# Papirus icon theme install"
-curl -fsSL https://git.io/papirus-icon-theme-install | sh
-
 echo -e "\n# Systemctl enable and starting services"
 cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
 

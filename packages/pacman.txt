@@ -32,3 +32,5 @@ noto-fonts-cjk
 ttf-jetbrains-mono
 jq
 firefox
+papirus-icon-theme
+starship
