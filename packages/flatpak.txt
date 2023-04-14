@@ -8,3 +8,4 @@ org.ferdium.Ferdium
 fr.handbrake.ghb
 rest.insomnia.Insomnia
 org.gnome.World.Secrets
+com.mattjakeman.ExtensionManager
