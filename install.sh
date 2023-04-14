@@ -12,9 +12,19 @@ GIT_USER_EMAIL="guibperes@protonmail.com"
 # - Keyboard set English (US, alt. intl.) and English (US)
 # - Keyboard shorcut open kitty terminal Super+T
 # - Keyboard shorcut open nautilus Super+F
-# - Extensions install and config
 # - Setting user display name and picture
 # - Removing default not used apps
+# - Ferdium config
+# - Hanbrake config
+# - Papirus icon set
+# - Weather setting city and celsius degree
+# - File for packages list (pacman, yay, flatpak)
+# - Extensions install and config
+# - appindicatorsupport@rgcjonas.gmail.com
+# - dash-to-dock@micxgx.gmail.com
+# - vertical-overview@RensAlthuis.github.com
+# - Vitals@CoreCoding.com
+# - WallpaperSwitcher@Rishu
 
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
