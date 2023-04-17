@@ -8,6 +8,8 @@
 # - Hanbrake config
 # - Papirus icon set
 # - Weather setting city and celsius degree
+# - Set Gnome Dark mode
+
 # - Extensions install and config
 # - appindicatorsupport@rgcjonas.gmail.com
 # - dash-to-dock@micxgx.gmail.com
