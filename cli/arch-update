@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo -e "# Yay full system update"
+yay
+
+echo -e "\n# Flatpak update"
+flatpak update
+

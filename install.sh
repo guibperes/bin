@@ -4,6 +4,8 @@
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
 
+USER_NAME="Guilherme Beidaki Peres"
+
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
 git clone -q https://github.com/guibperes/bin $BIN_PATH
@@ -32,6 +34,7 @@ cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
 
 echo -e "\n# User configurations"
 sudo usermod -aG docker $USER
+sudo usermod -c $USER_NAME $USER
 sudo chsh -s /bin/zsh $USER
 yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
 fc-cache -fv
