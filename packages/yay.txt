@@ -1,5 +1,5 @@
 gnome-shell-extension-pop-shell-git
-brave-bin
+librewolf-bin
 nvm
 oh-my-zsh-git
 zinit-git

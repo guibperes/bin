@@ -4,7 +4,6 @@ gst-plugins-base
 gst-plugins-bad
 gst-libav
 gstreamer
-os-prober
 ntfs-3g
 gnome-software-packagekit-plugin
 fwupd
@@ -31,6 +30,5 @@ noto-fonts-emoji
 noto-fonts-cjk
 ttf-jetbrains-mono
 jq
-firefox
 papirus-icon-theme
 starship
