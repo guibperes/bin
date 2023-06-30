@@ -37,6 +37,10 @@ sudo usermod -aG docker $USER
 sudo usermod -c $USER_NAME $USER
 sudo chsh -s /bin/zsh $USER
 yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-up "@as []"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-down "@as []"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-left "['<Primary><Super>Left','<Primary><Super>Up']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-right "['<Primary><Super>Right', '<Primary><Super>Down']"
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
