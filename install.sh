@@ -1,9 +1,7 @@
 #!/bin/bash
-
 # ArchLinux post installation script
 BIN_NAME=.bin
 BIN_PATH=$HOME/$BIN_NAME
-
 USER_NAME="Guilherme Beidaki Peres"
 
 echo -e "\n# Starting Post installation script"
@@ -36,11 +34,6 @@ echo -e "\n# User configurations"
 sudo usermod -aG docker $USER
 sudo usermod -c $USER_NAME $USER
 sudo chsh -s /bin/zsh $USER
-yes | /usr/share/gnome-shell/extensions/pop-shell\@system76.com/scripts/configure.sh
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-up "@as []"
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-down "@as []"
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-left "['<Primary><Super>Left','<Primary><Super>Up']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-right "['<Primary><Super>Right', '<Primary><Super>Down']"
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
@@ -54,4 +47,3 @@ cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
-
