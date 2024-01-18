@@ -5,6 +5,7 @@ gst-plugins-bad
 gst-libav
 gstreamer
 ntfs-3g
+exfat-utils
 gnome-software-packagekit-plugin
 fwupd
 wine
@@ -18,7 +19,6 @@ mpv
 kitty
 unrar
 docker
-docker-compose
 yt-dlp
 code
 piper
@@ -32,3 +32,13 @@ ttf-jetbrains-mono
 jq
 papirus-icon-theme
 starship
+android-tools
+bluez-utils
+ghex
+gnome-tweaks
+htop
+linux-headers
+mangohud
+rsync
+timeshift
+usbutils
