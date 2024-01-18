@@ -17,3 +17,4 @@ net.nokyan.Resources
 org.gnome.Firmware
 org.gnome.Loupe
 org.gtk.Gtk3theme.Adwaita-dark
+org.gnome.Boxes
