@@ -1,5 +1,9 @@
-gnome-shell-extension-pop-shell-git
 librewolf-bin
+google-chrome
 nvm
 oh-my-zsh-git
 zinit-git
+minecraft-launcher
+onlyoffice-bin
+rslsync
+rtl8812au-dkms-git
