@@ -1,4 +1,3 @@
-librewolf-bin
 google-chrome
 nvm
 oh-my-zsh-git
