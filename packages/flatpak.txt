@@ -9,13 +9,9 @@ org.gnome.World.Secrets
 com.mattjakeman.ExtensionManager
 com.github.tchx84.Flatseal
 de.haeckerfelix.Fragments
-dev.vencord.Vesktop
-info.febvre.Komikku
 io.github.giantpinkrobots.flatsweep
 md.obsidian.Obsidian
 net.nokyan.Resources
 org.gnome.Firmware
 org.gnome.Loupe
 org.gtk.Gtk3theme.Adwaita-dark
-org.gnome.Boxes
-cc.arduino.IDE2

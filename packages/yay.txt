@@ -4,5 +4,3 @@ oh-my-zsh-git
 zinit-git
 minecraft-launcher
 onlyoffice-bin
-rslsync
-rtl8812au-dkms-git

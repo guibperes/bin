@@ -32,7 +32,6 @@ ttf-jetbrains-mono
 jq
 papirus-icon-theme
 starship
-android-tools
 bluez-utils
 ghex
 gnome-tweaks
