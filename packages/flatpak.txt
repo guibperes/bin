@@ -13,5 +13,4 @@ io.github.giantpinkrobots.flatsweep
 md.obsidian.Obsidian
 net.nokyan.Resources
 org.gnome.Firmware
-org.gnome.Loupe
 org.gtk.Gtk3theme.Adwaita-dark

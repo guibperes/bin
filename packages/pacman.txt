@@ -6,7 +6,6 @@ gst-libav
 gstreamer
 ntfs-3g
 exfat-utils
-gnome-software-packagekit-plugin
 fwupd
 wine
 neofetch
