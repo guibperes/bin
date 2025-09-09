@@ -35,3 +35,8 @@ htop
 linux-headers
 dkms
 mise
+celluloid
+chromium
+firefox
+gamemode
+wavemon
