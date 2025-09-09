@@ -7,10 +7,11 @@ fr.handbrake.ghb
 rest.insomnia.Insomnia
 org.gnome.World.Secrets
 com.mattjakeman.ExtensionManager
-com.github.tchx84.Flatseal
 de.haeckerfelix.Fragments
-io.github.giantpinkrobots.flatsweep
 md.obsidian.Obsidian
 net.nokyan.Resources
 org.gnome.Firmware
 org.gtk.Gtk3theme.Adwaita-dark
+com.github.Matoking.protontricks
+io.github.flattool.Warehouse
+io.gitlab.news_flash.NewsFlash

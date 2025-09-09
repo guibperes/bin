@@ -1,2 +1,3 @@
 minecraft-launcher
 onlyoffice-bin
+displaylink
