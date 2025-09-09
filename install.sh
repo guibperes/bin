@@ -33,7 +33,7 @@ cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
 echo -e "\n# User configurations"
 sudo usermod -aG docker $USER
 sudo usermod -c $USER_NAME $USER
-sudo chsh -s /bin/zsh $USER
+sudo chsh -s /bin/fish $USER
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
@@ -42,8 +42,9 @@ mkdir -p $HOME/.config/mpv $HOME/.config/kitty
 cp $BIN_PATH/configs/.XCompose $HOME/.XCompose
 cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
 cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
-cp $BIN_PATH/configs/.zshrc $HOME/.zshrc
+cp $BIN_PATH/configs/config.fish $HOME/.config/fish/config.fish
 cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
+

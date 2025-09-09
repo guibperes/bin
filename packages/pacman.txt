@@ -10,7 +10,7 @@ fwupd
 wine
 git
 vim
-zsh
+fish
 curl
 ffmpeg
 mpv
@@ -41,5 +41,3 @@ timeshift
 usbutils
 dkms
 mise
-zsh-syntax-highlighting
-zsh-autosuggestions
