@@ -1,25 +1,32 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/usr/share/oh-my-zsh
+# Persistent history
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 
-ZSH_CACHE_DIR="$HOME/.cache/oh-my-zsh"
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-    mkdir $ZSH_CACHE_DIR
-fi
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
 
-source $ZSH/oh-my-zsh.sh
-source /usr/share/zinit/zinit.zsh
+# Initialize completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
+# Starship
+eval "$(starship init zsh)"
 
-# User configurations
+# Plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Alias
+alias ls='ls --color=auto -G'
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias lsa='ls -lah'
+
 # .bin folder
 export PATH=$PATH:$HOME/.bin/cli
 
-# NVM
-source /usr/share/nvm/init-nvm.sh
-
-# Starship startup
-eval "$(starship init zsh)"
+# Mise
+eval "$(mise activate zsh)"
 

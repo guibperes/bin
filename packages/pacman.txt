@@ -8,7 +8,6 @@ ntfs-3g
 exfat-utils
 fwupd
 wine
-neofetch
 git
 vim
 zsh
@@ -41,3 +40,6 @@ rsync
 timeshift
 usbutils
 dkms
+mise
+zsh-syntax-highlighting
+zsh-autosuggestions
