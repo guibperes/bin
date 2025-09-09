@@ -27,17 +27,11 @@ noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk
 ttf-jetbrains-mono
-jq
 papirus-icon-theme
 starship
 bluez-utils
-ghex
 gnome-tweaks
 htop
 linux-headers
-mangohud
-rsync
-timeshift
-usbutils
 dkms
 mise
