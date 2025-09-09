@@ -37,7 +37,7 @@ sudo chsh -s /bin/fish $USER
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
-mkdir -p $HOME/.config/mpv $HOME/.config/kitty
+mkdir -p $HOME/.config/mpv $HOME/.config/kitty $HOME/.config/fish
 
 cp $BIN_PATH/configs/.XCompose $HOME/.XCompose
 cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
