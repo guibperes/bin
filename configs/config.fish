@@ -9,4 +9,5 @@ end
 
 fish_add_path $HOME/.bin/cli
 set -g fish_greeting
+alias l="la"
 
