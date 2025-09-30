@@ -1,10 +1,7 @@
 com.valvesoftware.Steam
-com.heroicgameslauncher.hgl
-com.spotify.Client
 com.discordapp.Discord
 org.gimp.GIMP
 fr.handbrake.ghb
-rest.insomnia.Insomnia
 org.gnome.World.Secrets
 com.mattjakeman.ExtensionManager
 de.haeckerfelix.Fragments
