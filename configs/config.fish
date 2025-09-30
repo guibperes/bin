@@ -7,7 +7,12 @@ if status is-interactive
     mise activate fish | source
 end
 
+# .bin directory scripts
 fish_add_path $HOME/.bin/cli
-set -g fish_greeting
-alias l="la"
 
+# Remove greeting message
+set -g fish_greeting
+
+# Aliases
+alias l="la"
+alias spotify="spotify_player"
