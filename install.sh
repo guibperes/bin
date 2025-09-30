@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm - <$BIN_PATH/packages/pacman.txt
 
 echo -e "\n# Yay AUR package manager installation, configuration and package install"
 sudo pacman -S --needed --noconfirm base-devel
-git clone -q https://aur.archlinux.org/yay.git $BIN_PATH/yay
+git clone https://aur.archlinux.org/yay.git $BIN_PATH/yay
 cd $BIN_PATH/yay
 makepkg -si --noconfirm
 cd $BIN_PATH
