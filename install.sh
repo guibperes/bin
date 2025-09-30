@@ -6,7 +6,7 @@ USER_NAME="Guilherme Beidaki Peres"
 
 echo -e "\n# Starting Post installation script"
 echo -e "\n# Clonning guibperes/bin github repository"
-git clone -q https://github.com/guibperes/bin $BIN_PATH
+git clone https://github.com/guibperes/bin $BIN_PATH
 
 echo -e "\n# Pacman package manager full system update and packages install"
 sudo cp $BIN_PATH/configs/pacman.conf /etc/pacman.conf
