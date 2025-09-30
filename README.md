@@ -1,11 +1,16 @@
 # Installation script
+
 Installation, configuration and script's for my linux distro setup.
 
 ## Installation
+
 ```shell
 wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | bash
 ```
 
-## Link's
-- [PopOS Shell](https://github.com/pop-os/shell)
-- [PopOS Shell on others systems](https://support.system76.com/articles/pop-shell)
+## TODO
+
+- Gnome set keyboard shortcuts
+- Gnome remove default not used apps
+- Gnome extensions install and config
+- Keyboard set English (US, alt. intl.) and English (US)
