@@ -11,7 +11,7 @@ git clone -q https://github.com/guibperes/bin $BIN_PATH
 echo -e "\n# Pacman package manager full system update and packages install"
 sudo cp $BIN_PATH/configs/pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm - < $BIN_PATH/packages/pacman.txt
+sudo pacman -S --noconfirm - <$BIN_PATH/packages/pacman.txt
 
 echo -e "\n# Yay AUR package manager installation, configuration and package install"
 sudo pacman -S --needed --noconfirm base-devel
@@ -26,6 +26,9 @@ cat $BIN_PATH/packages/yay.txt | xargs yay -S --noconfirm
 
 echo -e "\n# Flatpak installation"
 cat $BIN_PATH/packages/flatpak.txt | xargs flatpak install --noninteractive -y flathub
+
+echo -e "\n# LazyVim install"
+git clone https://github.com/guibperes/lazyvim-config $HOME/.config/nvim
 
 echo -e "\n# Systemctl enable and starting services"
 cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
@@ -47,4 +50,3 @@ cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 
 echo -e "\n# Finished Post installation script"
-

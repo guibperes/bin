@@ -40,3 +40,4 @@ chromium
 firefox
 gamemode
 wavemon
+neovim
