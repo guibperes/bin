@@ -39,3 +39,4 @@ firefox
 gamemode
 wavemon
 neovim
+spotify-player

@@ -40,7 +40,7 @@ sudo chsh -s /bin/fish $USER
 fc-cache -fv
 
 echo -e "\n# Copying configuration files"
-mkdir -p $HOME/.config/mpv $HOME/.config/kitty $HOME/.config/fish
+mkdir -p $HOME/.config/mpv $HOME/.config/kitty $HOME/.config/fish $HOME/.config/spotify-player
 
 cp $BIN_PATH/configs/.XCompose $HOME/.XCompose
 cp $BIN_PATH/configs/starship.toml $HOME/.config/starship.toml
@@ -48,5 +48,6 @@ cp $BIN_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
 cp $BIN_PATH/configs/config.fish $HOME/.config/fish/config.fish
 cp $BIN_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $BIN_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
+cp $BIN_PATH/configs/spotify.toml $HOME/.config/spotify-player/app.toml
 
 echo -e "\n# Finished Post installation script"
