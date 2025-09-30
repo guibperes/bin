@@ -29,7 +29,7 @@ papirus-icon-theme
 starship
 bluez-utils
 gnome-tweaks
-htop
+btop
 linux-headers
 dkms
 mise
