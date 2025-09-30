@@ -30,6 +30,9 @@ cat $BIN_PATH/packages/flatpak.txt | xargs flatpak install --noninteractive -y f
 echo -e "\n# LazyVim install"
 git clone https://github.com/guibperes/lazyvim-config $HOME/.config/nvim
 
+echo -e "\n# Mise install global tools"
+mise use -g node@22
+
 echo -e "\n# Systemctl enable and starting services"
 cat $BIN_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable --now
 
