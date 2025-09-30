@@ -9,7 +9,6 @@ exfat-utils
 fwupd
 wine
 git
-vim
 fish
 curl
 ffmpeg
@@ -18,7 +17,6 @@ kitty
 unrar
 docker
 yt-dlp
-code
 piper
 simple-scan
 cups
