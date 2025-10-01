@@ -3,6 +3,7 @@ dkms
 fwupd
 iwd
 cups
+avahi
 gst-plugins-ugly
 gst-plugins-good
 gst-plugins-base
@@ -37,4 +38,3 @@ noto-fonts-cjk
 ttf-jetbrains-mono-nerd
 ttf-liberation
 papirus-icon-theme
-bluez-utils
