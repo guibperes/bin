@@ -18,8 +18,8 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Screensaver and Lockscreen
 - Tokyo night theme
 - Icon theme (Papirus)
-- Fonts (Nerd fonts; Jetbrains Mono; Casual fonts)
-- Wifi and network
+- ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
+- ✅ Wifi and network (iwd and impala)
 - Bluetooth
 - Audio
 - Calculator
