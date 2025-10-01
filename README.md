@@ -26,7 +26,10 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Bluetooth
 - Audio
 - Calculator
-- Printscreen, Screenshot and Screenrecord
+- PDF viewer
+- Image viewer
+- Media player control
+- Screenshot and Screenrecord
 - File manager
 - Monitors
 - Emoji selector
