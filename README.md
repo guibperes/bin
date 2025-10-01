@@ -11,14 +11,17 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 ## TODO: Hyperland setup and configuration
 
 - Hyperland
+- ✅ Device firmware update (fwupd)
+- ✅ Task manager (btop)
 - Top bar (Waybar)
+- Notifications
 - Keyboard shortcuts
 - Keyboard layout setup: US, alt. intl.; US; BR
 - Application launcher (?)
 - Screensaver and Lockscreen
 - Tokyo night theme
 - Icon theme (Papirus)
-- ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
+- ✅Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
 - Bluetooth
 - Audio
@@ -30,3 +33,4 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Helper to show all keybinds
 - Power profiles and battery status
 - About (neofetch replace)
+- Gnome apps configuration (GTK Theme, Icon, Color scheme)
