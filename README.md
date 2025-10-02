@@ -13,6 +13,10 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Hyperland file
 - Hyperland: Remove packages installed from archinstall
 - Hyperland: Gnome and GTK softwares support
+- Akira: theme creation
+- Akira: logo
+- Akira: Bootscreen
+- Akira: README description
 - ✅ Device firmware update (fwupd)
 - ✅ Task manager (btop)
 - Top bar (Waybar)
