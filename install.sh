@@ -47,9 +47,9 @@ cp $AKIRA_DIR_PATH/configs/.XCompose $HOME/.XCompose
 cp $AKIRA_DIR_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
 cp $AKIRA_DIR_PATH/configs/spotify.toml $HOME/.config/spotify-player/app.toml
 
-echo -e "\n# Akira GTK theme"
-git clone https://github.com/guibperes/akira-gtk-theme $HOME/.themes/Akira
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+# echo -e "\n# Akira GTK theme"
+# git clone https://github.com/guibperes/akira-gtk-theme $HOME/.themes/Akira
+# gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 echo -e "\n# fish, starship and kitty terminal configuration"
 mkdir -p $HOME/.config/fish $HOME/.config/kitty $HOME/.config/kitty/themes
