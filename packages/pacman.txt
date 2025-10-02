@@ -13,6 +13,8 @@ gstreamer
 ntfs-3g
 exfat-utils
 flatpak
+waybar
+wofi
 kitty
 fish
 starship
