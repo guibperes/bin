@@ -13,7 +13,13 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Hyperland file
 - Hyperland: Remove packages installed from archinstall
 - Hyperland: Gnome and GTK softwares support
-- Akira: theme creation
+- Akira: themes
+  - ✅ kitty
+  - nvim and lazyvim
+  - Hyperland
+  - GTK and Gnome
+  - wofi
+  - waybar
 - Akira: logo
 - Akira: Bootscreen
 - Akira: README description
@@ -23,9 +29,8 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Notifications
 - Keyboard shortcuts
 - Keyboard layout setup: US, alt. intl.; US; BR
-- Application launcher (?)
+- Application launcher (wofi)
 - Screensaver and Lockscreen
-- Tokyo night theme
 - Icon theme (Papirus)
 - ✅Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
@@ -42,4 +47,3 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Helper to show all keybinds
 - Power profiles and battery status
 - About (neofetch replace)
-- Gnome apps configuration (GTK Theme, Icon, Color scheme)
