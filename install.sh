@@ -49,7 +49,6 @@ cp $AKIRA_DIR_PATH/configs/.XCompose $HOME/.XCompose
 cp $AKIRA_DIR_PATH/configs/starship.toml $HOME/.config/starship.toml
 cp $AKIRA_DIR_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
 cp $AKIRA_DIR_PATH/configs/config.fish $HOME/.config/fish/config.fish
-cp $AKIRA_DIR_PATH/configs/tokyo-night.conf $HOME/.config/kitty/tokyo-night.conf
 cp $AKIRA_DIR_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
 cp $AKIRA_DIR_PATH/configs/akira/akira.conf $HOME/.config/kitty/themes/akira.conf
 cp $AKIRA_DIR_PATH/configs/spotify.toml $HOME/.config/spotify-player/app.toml
