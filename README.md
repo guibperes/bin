@@ -20,6 +20,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
   - GTK and Gnome
   - ✅ wofi
   - waybar
+  - flatpak
 - Akira: logo
 - Akira: Bootscreen
 - Akira: README description
@@ -48,3 +49,6 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Power profiles and battery status
 - ✅ About (fastfetch)
 - git shortcuts
+- power off, reboot shortcuts
+- ssh key manager to avoid multiple password typing
+- nvim/lazyvim memory bug?
