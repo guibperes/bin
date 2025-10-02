@@ -54,6 +54,7 @@ cp $AKIRA_DIR_PATH/configs/akira/akira.conf $HOME/.config/kitty/themes/akira.con
 cp $AKIRA_DIR_PATH/configs/spotify.toml $HOME/.config/spotify-player/app.toml
 
 echo -e "\n# Akira theme set"
+git clone https://github.com/guibperes/akira-gtk-theme $HOME/.themes/Akira
 kitten themes --reload-in all Akira
 
 echo -e "\n# Finished Post installation script"
