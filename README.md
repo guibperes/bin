@@ -47,3 +47,4 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Helper to show all keybinds
 - Power profiles and battery status
 - ✅ About (fastfetch)
+- git shortcuts
