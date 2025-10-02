@@ -46,4 +46,4 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Emoji selector
 - Helper to show all keybinds
 - Power profiles and battery status
-- About (neofetch replace)
+- ✅ About (fastfetch)
