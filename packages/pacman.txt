@@ -35,6 +35,7 @@ hplip
 piper
 simple-scan
 chromium
+nautilus
 noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk
