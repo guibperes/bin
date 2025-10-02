@@ -17,6 +17,7 @@ fish
 starship
 git
 curl
+less
 ffmpeg
 mpv
 yt-dlp

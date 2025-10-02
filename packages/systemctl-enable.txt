@@ -1,3 +1,6 @@
 bluetooth
 docker
 cups
+iwd
+avahi-daemon
+avahi-dnsconfd
