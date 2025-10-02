@@ -1,0 +1,46 @@
+/* ===========================
+   Akira Theme (Tokyo Night)
+   Waybar
+   =========================== */
+
+/* Global */
+* {
+  font-family: JetBrains Mono, monospace;
+  font-size: 12px;
+  color: #C0CAF5; /* Light text */
+}
+
+window#waybar {
+  background-color: #1A1B26; /* Dark background */
+  border-bottom: 2px solid #F7768E; /* Red neon accent */
+}
+
+/* Workspaces */
+#workspaces button {
+  background: transparent;
+  color: #C0CAF5;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+#workspaces button.focused {
+  background: #F7768E; /* Red neon for active */
+  color: #1A1B26;
+}
+
+#workspaces button:hover {
+  background: #7DCFFF; /* Cyan hover */
+  color: #1A1B26;
+}
+
+/* Modules (clock, battery, etc) */
+#clock, #battery, #network, #pulseaudio {
+  padding: 0 10px;
+}
+
+/* Hover effect for modules */
+#clock:hover, #battery:hover, #network:hover, #pulseaudio:hover {
+  background: #414868;
+  border-radius: 6px;
+}
+

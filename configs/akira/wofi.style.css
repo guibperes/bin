@@ -1,0 +1,54 @@
+/* ===========================
+   Akira Theme (Tokyo Night)
+   Wofi
+   =========================== */
+
+/* Window */
+window {
+  background-color: #1A1B26;
+  color: #C0CAF5;
+  border: 2px solid #F7768E; /* Red neon border */
+  border-radius: 8px;
+  font-family: JetBrains Mono, monospace;
+  font-size: 12px;
+}
+
+/* Input field */
+#input {
+  background-color: #1A1B26;
+  color: #C0CAF5;
+  border: 1px solid #414868;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+#input:focus {
+  border-color: #7DCFFF; /* Cyan highlight */
+}
+
+/* Entries */
+#entry {
+  background-color: transparent;
+  padding: 6px;
+}
+
+#entry:selected {
+  background-color: #F7768E; /* Red neon selection */
+  color: #1A1B26;
+  border-radius: 6px;
+}
+
+/* Scrollbar */
+scrollbar {
+  background-color: #1A1B26;
+}
+
+scrollbar slider {
+  background-color: #414868;
+  border-radius: 4px;
+}
+
+scrollbar slider:hover {
+  background-color: #7DCFFF;
+}
+

@@ -38,23 +38,30 @@ cat $AKIRA_DIR_PATH/packages/systemctl-enable.txt | xargs sudo systemctl enable 
 
 echo -e "\n# User configurations"
 sudo usermod -aG docker $USER
-sudo usermod -c $USER_NAME $USER
-sudo chsh -s /bin/fish $USER
-fc-cache -fv
+# sudo usermod -c $USER_NAME $USER
+# fc-cache -fv
 
 echo -e "\n# Copying configuration files"
-mkdir -p $HOME/.config/mpv $HOME/.config/kitty $HOME/.config/kitty/themes $HOME/.config/fish $HOME/.config/spotify-player
-
+mkdir -p $HOME/.config/mpv $HOME/.config/spotify-player
 cp $AKIRA_DIR_PATH/configs/.XCompose $HOME/.XCompose
-cp $AKIRA_DIR_PATH/configs/starship.toml $HOME/.config/starship.toml
 cp $AKIRA_DIR_PATH/configs/mpv.conf $HOME/.config/mpv/mpv.conf
-cp $AKIRA_DIR_PATH/configs/config.fish $HOME/.config/fish/config.fish
-cp $AKIRA_DIR_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
-cp $AKIRA_DIR_PATH/configs/akira/akira.conf $HOME/.config/kitty/themes/akira.conf
 cp $AKIRA_DIR_PATH/configs/spotify.toml $HOME/.config/spotify-player/app.toml
 
-echo -e "\n# Akira theme set"
+echo -e "\n# Akira GTK theme"
 git clone https://github.com/guibperes/akira-gtk-theme $HOME/.themes/Akira
+
+echo -e "\n# fish, starship and kitty terminal configuration"
+mkdir -p $HOME/.config/fish $HOME/.config/kitty $HOME/.config/kitty/themes
+cp $AKIRA_DIR_PATH/configs/config.fish $HOME/.config/fish/config.fish
+cp $AKIRA_DIR_PATH/configs/starship.toml $HOME/.config/starship.toml
+cp $AKIRA_DIR_PATH/configs/kitty.conf $HOME/.config/kitty/kitty.conf
+cp $AKIRA_DIR_PATH/configs/akira/akira.conf $HOME/.config/kitty/themes/akira.conf
+sudo chsh -s /bin/fish $USER
 kitten themes --reload-in all Akira
+
+echo -e "\n# Waybar and wofi configuration"
+mkdir -p $HOME/.config/waybar $HOME/.config/wofi
+cp $AKIRA_DIR_PATH/configs/akira/waybar.style.css $HOME/.config/waybar/style.css
+cp $AKIRA_DIR_PATH/configs/akira/wofi.style.css $HOME/.config/wofi/style.css
 
 echo -e "\n# Finished Post installation script"
