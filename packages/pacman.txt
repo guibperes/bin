@@ -12,6 +12,7 @@ gst-libav
 gstreamer
 ntfs-3g
 exfat-utils
+flatpak
 kitty
 fish
 starship
