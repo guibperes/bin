@@ -7,8 +7,7 @@
 window {
   background-color: #1A1B26;
   color: #C0CAF5;
-  border: 2px solid #F7768E; /* Red neon border */
-  border-radius: 8px;
+  border: 1px solid #F7768E; /* Red neon border */
   font-family: JetBrains Mono, monospace;
   font-size: 12px;
 }
@@ -17,9 +16,9 @@ window {
 #input {
   background-color: #1A1B26;
   color: #C0CAF5;
-  border: 1px solid #414868;
-  border-radius: 6px;
-  padding: 6px;
+  border: 1px solid #F7768E;
+  border-radius: 0px;
+  padding: 5px;
 }
 
 #input:focus {
@@ -29,13 +28,13 @@ window {
 /* Entries */
 #entry {
   background-color: transparent;
-  padding: 6px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #entry:selected {
   background-color: #F7768E; /* Red neon selection */
   color: #1A1B26;
-  border-radius: 6px;
 }
 
 /* Scrollbar */
@@ -45,10 +44,14 @@ scrollbar {
 
 scrollbar slider {
   background-color: #414868;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 scrollbar slider:hover {
   background-color: #7DCFFF;
+}
+
+image {
+  margin: 5px;
 }
 

@@ -18,7 +18,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
   - nvim and lazyvim
   - Hyperland
   - GTK and Gnome
-  - wofi
+  - ✅ wofi
   - waybar
 - Akira: logo
 - Akira: Bootscreen
@@ -29,7 +29,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Notifications
 - Keyboard shortcuts
 - Keyboard layout setup: US, alt. intl.; US; BR
-- Application launcher (wofi)
+- ✅ Application launcher (wofi)
 - Screensaver and Lockscreen
 - Icon theme (Papirus)
 - ✅Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
