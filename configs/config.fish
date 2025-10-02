@@ -8,7 +8,7 @@ if status is-interactive
 end
 
 # .bin directory scripts
-fish_add_path $HOME/.bin/cli
+fish_add_path $HOME/.akira/bin
 
 # Remove greeting message
 set -g fish_greeting
