@@ -35,6 +35,7 @@ window {
 #entry:selected {
   background-color: #F7768E; /* Red neon selection */
   color: #1A1B26;
+  border-radius: 0px;
 }
 
 /* Scrollbar */

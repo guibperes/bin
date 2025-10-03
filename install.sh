@@ -2,8 +2,8 @@
 # Akira distro installation script
 AKIRA_DIR_NAME=.akira
 AKIRA_DIR_PATH=$HOME/$AKIRA_DIR_NAME
-AKIRA_CONFIG_PATH=$AKIRA_DIR_NAME/configs
-AKIRA_PKG_PATH=$AKIRA_DIR_NAME/packages
+AKIRA_CONFIG_PATH=$AKIRA_DIR_PATH/configs
+AKIRA_PKG_PATH=$AKIRA_DIR_PATH/packages
 
 HOME_CONFIG_PATH=$HOME/.config
 
@@ -17,7 +17,6 @@ GIT_URL_LAZYVIM=https://github.com/guibperes/lazyvim-config
 # sudo usermod -c $USER_NAME $USER
 # echo -e "\n# Akira GTK theme"
 # git clone $GIT_URL_AKIRA_GTK $HOME/.themes/Akira
-# gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 echo -e "\n# Starting Akira installation script"
 echo -e "\n# Pacman package manager full system update and packages install"
@@ -72,6 +71,7 @@ cp $AKIRA_CONFIG_PATH/starship.toml $HOME_CONFIG_PATH
 echo -e "\n# Applying configurations"
 sudo usermod -aG docker $USER
 sudo chsh -s /bin/fish $USER
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 kitten themes --reload-in all Akira
 fc-cache
 
