@@ -29,6 +29,19 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - ✅ Device firmware update (fwupd)
 - ✅ Task manager (btop)
 - Top bar (Waybar)
+  - ✅ Workspaces
+  - ✅ Clock
+  - Calendar
+  - Tray icons
+  - CPU
+  - RAM
+  - Temperature
+  - Keyboard layout
+  - Network
+  - Bluetooth
+  - Audio
+  - Battery
+  - Gamemode
 - Notifications
 - Keyboard shortcuts
 - Keyboard layout setup: US, alt. intl.; US; BR
