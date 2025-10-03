@@ -62,6 +62,8 @@ kitten themes --reload-in all Akira
 
 echo -e "\n# Waybar and wofi configuration"
 mkdir -p $HOME/.config/waybar $HOME/.config/wofi
+cp $AKIRA_DIR_PATH/configs/hyperland/waybar.json $HOME/.config/waybar/config
+cp $AKIRA_DIR_PATH/configs/hyperland/wofi.config $HOME/.config/wofi/config
 cp $AKIRA_DIR_PATH/configs/akira/waybar.style.css $HOME/.config/waybar/style.css
 cp $AKIRA_DIR_PATH/configs/akira/wofi.style.css $HOME/.config/wofi/style.css
 

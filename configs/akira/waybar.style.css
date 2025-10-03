@@ -5,25 +5,24 @@
 
 /* Global */
 * {
-  font-family: JetBrains Mono, monospace;
+  font-family: JetBrainsMono Nerd Font Mono, monospace;
   font-size: 12px;
   color: #C0CAF5; /* Light text */
 }
 
 window#waybar {
   background-color: #1A1B26; /* Dark background */
-  border-bottom: 2px solid #F7768E; /* Red neon accent */
 }
 
 /* Workspaces */
 #workspaces button {
   background: transparent;
   color: #C0CAF5;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 4px 8px;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
   background: #F7768E; /* Red neon for active */
   color: #1A1B26;
 }
@@ -41,6 +40,6 @@ window#waybar {
 /* Hover effect for modules */
 #clock:hover, #battery:hover, #network:hover, #pulseaudio:hover {
   background: #414868;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
