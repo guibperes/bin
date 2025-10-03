@@ -2,6 +2,10 @@
 # Akira distro installation script
 AKIRA_DIR_NAME=.akira
 AKIRA_DIR_PATH=$HOME/$AKIRA_DIR_NAME
+AKIRA_CONFIG_PATH=$AKIRA_DIR_NAME/configs
+
+HOME_CONFIG_PATH=$HOME/.config
+
 USER_NAME="Guilherme Beidaki Peres"
 
 echo -e "\n# Starting Akira installation script"
@@ -66,5 +70,8 @@ cp $AKIRA_DIR_PATH/configs/hyperland/waybar.json $HOME/.config/waybar/config
 cp $AKIRA_DIR_PATH/configs/hyperland/wofi.config $HOME/.config/wofi/config
 cp $AKIRA_DIR_PATH/configs/akira/waybar.style.css $HOME/.config/waybar/style.css
 cp $AKIRA_DIR_PATH/configs/akira/wofi.style.css $HOME/.config/wofi/style.css
+
+echo -e "\n# Copying configuration files"
+cp -r $AKIRA_CONFIG_PATH/fastfetch $HOME_CONFIG_PATH
 
 echo -e "\n# Finished Post installation script"
