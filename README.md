@@ -10,9 +10,9 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 
 ## TODO: Hyperland setup and configuration
 
-- Hyperland file
+- ✅ Hyperland file
 - Hyperland: Remove packages installed from archinstall
-- Hyperland: Gnome and GTK softwares support
+- ✅ Hyperland: Gnome and GTK softwares support
 - Akira: themes
   - ✅ kitty
   - nvim and lazyvim
@@ -21,6 +21,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
   - ✅ wofi
   - waybar
   - flatpak
+  - btop
 - Akira: logo
 - Akira: Bootscreen
 - Akira: README description
@@ -31,9 +32,9 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Keyboard shortcuts
 - Keyboard layout setup: US, alt. intl.; US; BR
 - ✅ Application launcher (wofi)
-- Screensaver and Lockscreen
+- ✅ Screensaver and Lockscreen (hyprlock)
 - ✅ Icon theme (Papirus)
-- ✅Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
+- ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
 - Bluetooth
 - Audio

@@ -13,6 +13,8 @@ gstreamer
 ntfs-3g
 exfat-utils
 flatpak
+hyprpaper
+hyprlock
 waybar
 wofi
 kitty
