@@ -68,7 +68,7 @@ cp -r $AKIRA_CONFIG_PATH/wofi $HOME_CONFIG_PATH
 
 cp $AKIRA_CONFIG_PATH/.XCompose $HOME/.XCompose
 cp $AKIRA_CONFIG_PATH/starship.toml $HOME_CONFIG_PATH
-cp $AKIRA_CONFIG_PATH/assets/akira_wallpaper.jpg $HOME/Pictures/wallpapers
+cp $AKIRA_DIR_PATH/assets/akira_wallpaper.jpg $HOME/Pictures/wallpapers
 
 echo -e "\n# Applying configurations"
 sudo usermod -aG docker $USER
