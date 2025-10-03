@@ -54,7 +54,8 @@ mkdir -p \
   $HOME_CONFIG_PATH/mpv \
   $HOME_CONFIG_PATH/spotify-player \
   $HOME_CONFIG_PATH/waybar \
-  $HOME_CONFIG_PATH/wofi
+  $HOME_CONFIG_PATH/wofi \
+  $HOME/Pictures/wallpapers
 
 cp -r $AKIRA_CONFIG_PATH/fastfetch $HOME_CONFIG_PATH
 cp -r $AKIRA_CONFIG_PATH/fish $HOME_CONFIG_PATH
@@ -67,6 +68,7 @@ cp -r $AKIRA_CONFIG_PATH/wofi $HOME_CONFIG_PATH
 
 cp $AKIRA_CONFIG_PATH/.XCompose $HOME/.XCompose
 cp $AKIRA_CONFIG_PATH/starship.toml $HOME_CONFIG_PATH
+cp $AKIRA_CONFIG_PATH/assets/akira_wallpaper.jpg $HOME/Pictures/wallpapers
 
 echo -e "\n# Applying configurations"
 sudo usermod -aG docker $USER
