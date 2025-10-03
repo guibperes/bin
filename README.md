@@ -37,8 +37,7 @@ Installation, configuration and script's for my linux distro setup.
   - Battery
   - Gamemode
 - Notifications
-- Keyboard shortcuts
-- Keyboard layout setup: US, alt. intl.; US; BR
+- ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
 - ✅ Application launcher (wofi)
 - ✅ Screensaver and Lockscreen (hyprlock)
 - ✅ Icon theme (Papirus)
@@ -52,7 +51,8 @@ Installation, configuration and script's for my linux distro setup.
 - Media player control
 - Screenshot and Screenrecord
 - ✅ File manager (nautilus)
-- Monitors
+- ❗ Monitors (hypr config for each monitor)
+- ❗ Wokspaces for monitor (hypr config for each monitor) 
 - Emoji selector
 - Helper to show all keybinds
 - Power profiles and battery status
@@ -60,5 +60,4 @@ Installation, configuration and script's for my linux distro setup.
 - git shortcuts
 - power off, reboot shortcuts
 - ssh key manager to avoid multiple password typing
-- nvim/lazyvim memory bug?
 - ✅ Wallpaper (hyprpaper)
