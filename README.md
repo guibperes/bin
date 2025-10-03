@@ -16,7 +16,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Akira: themes
   - ✅ kitty
   - nvim and lazyvim
-  - Hyperland
+  - ✅ Hyperland
   - GTK and Gnome
   - ✅ wofi
   - waybar
@@ -32,7 +32,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Keyboard layout setup: US, alt. intl.; US; BR
 - ✅ Application launcher (wofi)
 - Screensaver and Lockscreen
-- Icon theme (Papirus)
+- ✅ Icon theme (Papirus)
 - ✅Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
 - Bluetooth
@@ -42,7 +42,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - Image viewer
 - Media player control
 - Screenshot and Screenrecord
-- File manager
+- ✅ File manager (nautilus)
 - Monitors
 - Emoji selector
 - Helper to show all keybinds
@@ -52,3 +52,4 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
 - power off, reboot shortcuts
 - ssh key manager to avoid multiple password typing
 - nvim/lazyvim memory bug?
+- ✅ Wallpaper (hyprpaper)
