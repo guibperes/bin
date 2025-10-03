@@ -3,10 +3,8 @@ com.discordapp.Discord
 org.gimp.GIMP
 fr.handbrake.ghb
 org.gnome.World.Secrets
-com.mattjakeman.ExtensionManager
 de.haeckerfelix.Fragments
 md.obsidian.Obsidian
-net.nokyan.Resources
 org.gnome.Firmware
 org.gtk.Gtk3theme.Adwaita-dark
 com.github.Matoking.protontricks
