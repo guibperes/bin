@@ -22,6 +22,7 @@ wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | ba
   - waybar
   - flatpak
   - btop
+  - chromium
 - Akira: logo
 - Akira: Bootscreen
 - Akira: README description
