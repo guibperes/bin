@@ -3,6 +3,5 @@
 echo -e "# Yay full system update"
 yay
 
-echo -e "\n# Flatpak update"
+echo -e "# Flatpak update"
 flatpak update
-
