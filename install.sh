@@ -44,33 +44,7 @@ git clone $GIT_URL_LAZYVIM $HOME_CONFIG_PATH/nvim
 echo -e "# Mise install global tools"
 mise use -g node@22
 
-echo -e "# Copying configuration files"
-mkdir -p \
-  $HOME_CONFIG_PATH/fastfetch \
-  $HOME_CONFIG_PATH/fish \
-  $HOME_CONFIG_PATH/hypr \
-  $HOME_CONFIG_PATH/kitty \
-  $HOME_CONFIG_PATH/kitty/themes \
-  $HOME_CONFIG_PATH/mpv \
-  $HOME_CONFIG_PATH/spotify-player \
-  $HOME_CONFIG_PATH/waybar \
-  $HOME_CONFIG_PATH/wofi \
-  $HOME/Pictures/wallpapers
-
-cp -r \
-  $AKIRA_CONFIG_PATH/fastfetch \
-  $AKIRA_CONFIG_PATH/fish \
-  $AKIRA_CONFIG_PATH/hypr \
-  $AKIRA_CONFIG_PATH/kitty \
-  $AKIRA_CONFIG_PATH/mpv \
-  $AKIRA_CONFIG_PATH/spotify-player \
-  $AKIRA_CONFIG_PATH/waybar \
-  $AKIRA_CONFIG_PATH/wofi \
-  $AKIRA_CONFIG_PATH/starship.toml \
-  $HOME_CONFIG_PATH
-
-cp $AKIRA_CONFIG_PATH/.XCompose $HOME/.XCompose
-cp $AKIRA_DIR_PATH/assets/akira_wallpaper.jpg $HOME/Pictures/wallpapers
+source ./scripts/cp-config.sh
 
 echo -e "# Applying configurations"
 sudo usermod -aG docker $USER

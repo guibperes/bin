@@ -2,12 +2,6 @@
 
 Installation, configuration and script's for my linux distro setup.
 
-## Installation
-
-```shell
-wget -qO- https://raw.githubusercontent.com/guibperes/bin/master/install.sh | bash
-```
-
 ## TODO: Hyperland setup and configuration
 
 - ✅ Hyperland file
