@@ -7,16 +7,19 @@ AKIRA_PKG_PATH=$AKIRA_DIR_NAME/packages
 
 HOME_CONFIG_PATH=$HOME/.config
 
+YAY_URL=https://aur.archlinux.org/yay.git
+YAY_DIR=$AKIRA_DIR_PATH/yay
+
+GIT_URL_LAZYVIM=https://github.com/guibperes/lazyvim-config
+# GIT_URL_AKIRA_GTK=https://github.com/guibperes/akira-gtk-theme
+
 # USER_NAME="Guilherme Beidaki Peres"
 # sudo usermod -c $USER_NAME $USER
 # echo -e "\n# Akira GTK theme"
-# git clone https://github.com/guibperes/akira-gtk-theme $HOME/.themes/Akira
+# git clone $GIT_URL_AKIRA_GTK $HOME/.themes/Akira
 # gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 echo -e "\n# Starting Akira installation script"
-echo -e "\n# Clonning Akira repository"
-git clone https://github.com/guibperes/bin $AKIRA_DIR_PATH
-
 echo -e "\n# Pacman package manager full system update and packages install"
 sudo cp $AKIRA_CONFIG_PATH/pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
@@ -24,11 +27,11 @@ sudo pacman -S --noconfirm - <$AKIRA_PKG_PATH/pacman.txt
 
 echo -e "\n# Yay installation, configuration and packages install"
 sudo pacman -S --needed --noconfirm base-devel
-git clone https://aur.archlinux.org/yay.git $AKIRA_DIR_PATH/yay
-cd $AKIRA_DIR_PATH/yay
+git clone $YAY_URL $YAY_DIR
+cd $YAY_DIR
 makepkg -si --noconfirm
 cd $AKIRA_DIR_PATH
-rm -rf $AKIRA_DIR_PATH/yay
+rm -rf $YAY_DIR
 
 yay -Y --gendb
 cat $AKIRA_PKG_PATH/yay.txt | xargs yay -S --noconfirm
@@ -37,7 +40,7 @@ echo -e "\n# Flatpak installation"
 cat $AKIRA_PKG_PATH/flatpak.txt | xargs flatpak install --noninteractive -y flathub
 
 echo -e "\n# LazyVim install"
-git clone https://github.com/guibperes/lazyvim-config $HOME_CONFIG_PATH/nvim
+git clone $GIT_URL_LAZYVIM $HOME_CONFIG_PATH/nvim
 
 echo -e "\n# Mise install global tools"
 mise use -g node@22
