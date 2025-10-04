@@ -53,7 +53,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Brightness control (brightnessctl)
 - Screenshot and Screenrecord
 - ✅ File manager (nautilus)
-- ❗ Monitors (hypr config for each monitor)
+- ❗ Monitors (kanshi)
 - ❗ Wokspaces for monitor (hypr config for each monitor)
 - Emoji selector
 - Helper to show all keybinds

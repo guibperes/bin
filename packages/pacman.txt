@@ -17,6 +17,7 @@ hyprpaper
 hyprlock
 waybar
 wofi
+kanshi
 kitty
 fish
 starship
