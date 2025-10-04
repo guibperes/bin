@@ -41,6 +41,10 @@ piper
 simple-scan
 chromium
 nautilus
+gnome-calculator
+papers
+gnome-font-viewer
+loupe
 noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk

@@ -45,9 +45,10 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Wifi and network (iwd and impala)
 - Bluetooth
 - Audio
-- Calculator
-- PDF viewer
-- Image viewer
+- ✅ Calculator
+- ✅ PDF viewer
+- ✅ Image viewer
+- ✅ Font viewer
 - Media player control
 - Screenshot and Screenrecord
 - ✅ File manager (nautilus)
