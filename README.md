@@ -43,13 +43,14 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Icon theme (Papirus)
 - ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
-- ✅ Bluetooth
-- ✅ Audio
-- ✅ Calculator
-- ✅ PDF viewer
-- ✅ Image viewer
-- ✅ Font viewer
-- ✅ Media player control
+- ✅ Bluetooth (bluetui)
+- ✅ Audio (wiremix)
+- ✅ Calculator (Gnome Calculator)
+- ✅ PDF viewer (Papirus)
+- ✅ Image viewer (Loupe)
+- ✅ Font viewer (Gnome Font viewer)
+- ✅ Media player control (wpctl and playerctl)
+- ✅ Brightness control (brightnessctl)
 - Screenshot and Screenrecord
 - ✅ File manager (nautilus)
 - ❗ Monitors (hypr config for each monitor)
