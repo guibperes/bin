@@ -5,7 +5,7 @@ Installation, configuration and script's for my linux distro setup.
 ## TODO: Hyperland setup and configuration
 
 - ✅ Hyperland file
-- Hyperland: Remove packages installed from archinstall
+- ✅ Hyperland: Remove packages installed from archinstall
 - ✅ Hyperland: Gnome and GTK softwares support
 - Akira: themes
   - ✅ kitty

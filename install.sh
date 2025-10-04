@@ -19,6 +19,9 @@ GIT_URL_LAZYVIM=https://github.com/guibperes/lazyvim-config
 # git clone $GIT_URL_AKIRA_GTK $HOME/.themes/Akira
 
 echo -e "# Starting Akira installation script"
+echo -e "# Removing Qt/KDE related packages"
+sudo pacman -Rns dolphin polkit-kde-agent
+
 echo -e "# Pacman package manager full system update and packages install"
 sudo cp $AKIRA_CONFIG_PATH/pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
