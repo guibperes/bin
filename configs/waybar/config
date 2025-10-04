@@ -77,8 +77,8 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "$TERMINAL --class=Wiremix -e wiremix",
-    "on-click-right": "pamixer -t",
+    "on-click": "kitty --class=Wiremix -e wiremix",
+    "on-click-right": "akira-audio-volume-toggle-mute",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
     "format-muted": "",

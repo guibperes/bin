@@ -31,6 +31,9 @@ fastfetch
 spotify-player
 mise
 impala
+wiremix
+playerctl
+brightnessctl
 btop
 docker
 docker-compose
