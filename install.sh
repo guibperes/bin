@@ -13,14 +13,15 @@ YAY_DIR=$AKIRA_DIR_PATH/yay
 GIT_URL_LAZYVIM=https://github.com/guibperes/lazyvim-config
 # GIT_URL_AKIRA_GTK=https://github.com/guibperes/akira-gtk-theme
 
-# USER_NAME="Guilherme Beidaki Peres"
-# sudo usermod -c $USER_NAME $USER
+GIT_USER_NAME="Guilherme Beidaki Peres"
+GIT_USER_EMAIL="guibperes@proton.me"
+
 # echo -e "\n# Akira GTK theme"
 # git clone $GIT_URL_AKIRA_GTK $HOME/.themes/Akira
 
 echo -e "# Starting Akira installation script"
 echo -e "# Removing Qt/KDE related packages"
-sudo pacman -Rns dolphin polkit-kde-agent
+sudo pacman -Rns --noconfirm dolphin polkit-kde-agent
 
 echo -e "# Pacman package manager full system update and packages install"
 sudo cp $AKIRA_CONFIG_PATH/pacman.conf /etc/pacman.conf
@@ -55,6 +56,18 @@ sudo chsh -s /bin/fish $USER
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 kitten themes --reload-in all Akira
 fc-cache
+
+echo -e "# Git configuration and aliases"
+git config --global user.name $GIT_USER_NAME
+git config --global user.email $GIT_USER_EMAIL
+git config --global alias.a 'add'
+git config --global alias.ps 'push'
+git config --global alias.pl 'pull'
+git config --global alias.l 'log'
+git config --global alias.c 'commit -m'
+git config --global alias.s 'status'
+git config --global alias.co 'checkout'
+git config --global alias.b 'branch'
 
 echo -e "# Systemctl enable and starting services"
 cat $AKIRA_PKG_PATH/systemctl-enable.txt | xargs sudo systemctl enable --now

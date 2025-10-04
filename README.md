@@ -59,7 +59,8 @@ Installation, configuration and script's for my linux distro setup.
 - Helper to show all keybinds
 - Power profiles and battery status
 - ✅ About (fastfetch)
-- git shortcuts
+- ✅ Git configuration ans aliases
 - power off, reboot shortcuts
 - ssh key manager to avoid multiple password typing
 - ✅ Wallpaper (hyprpaper)
+- Notebook lid open/close
