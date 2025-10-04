@@ -43,7 +43,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Icon theme (Papirus)
 - ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
-- Bluetooth
+- ✅ Bluetooth
 - ✅ Audio
 - ✅ Calculator
 - ✅ PDF viewer
