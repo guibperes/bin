@@ -49,11 +49,11 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ PDF viewer
 - ✅ Image viewer
 - ✅ Font viewer
-- Media player control
+- ✅ Media player control
 - Screenshot and Screenrecord
 - ✅ File manager (nautilus)
 - ❗ Monitors (hypr config for each monitor)
-- ❗ Wokspaces for monitor (hypr config for each monitor) 
+- ❗ Wokspaces for monitor (hypr config for each monitor)
 - Emoji selector
 - Helper to show all keybinds
 - Power profiles and battery status
