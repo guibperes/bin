@@ -44,7 +44,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Fonts (Noto fonts, Jetbrains Mono Nerd, ttf-liberation)
 - ✅ Wifi and network (iwd and impala)
 - Bluetooth
-- Audio
+- ✅ Audio
 - ✅ Calculator
 - ✅ PDF viewer
 - ✅ Image viewer
