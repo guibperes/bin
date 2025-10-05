@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SCREENSHOT_TYPE=$1 # area, window, monitor
+
+case $SCREENSHOT_TYPE in
+area)
+  grim -g "$(slurp)" - | wl-copy
+  ;;
+window)
+  hyprctl activewindow -j | jq -r '"\(.at[0]),\(.at([1]) \(.size[0])x(.size[1])"' | grim -g -
+  ;;
+monitor)
+  MONITOR="$(hyprctl activeworkspace -j | jq -r .monitor)"
+  grim -o $MONITOR - | wl-copy
+  ;;
+*)
+  grim - | wl-copy
+  ;;
+esac
