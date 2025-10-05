@@ -56,7 +56,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ File manager (nautilus)
 - ❗ Monitors (kanshi)
 - ❗ Wokspaces for monitor (hypr config for each monitor)
-- Emoji selector
+- ✅ Emoji selector
 - Helper to show all keybinds
 - Power profiles and battery status
 - ✅ About (fastfetch)
