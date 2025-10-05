@@ -7,7 +7,7 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
-    "group/tray-expander",
+    "tray",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -34,8 +34,9 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "$TERMINAL -e btop"
+    "on-click": "kitty -e btop"
   },
+
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
@@ -47,8 +48,9 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "omarchy-launch-wifi"
+    "on-click": "kitty --class=Network -e impala"
   },
+
   "battery": {
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
@@ -68,13 +70,15 @@
       "critical": 10
     }
   },
+
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "bluetui"
+    "on-click": "kitty --class=Bluetooth -e bluetui"
   },
+
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "kitty --class=Wiremix -e wiremix",
@@ -86,18 +90,7 @@
       "default": ["", "", ""]
     }
   },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item"
-    },
-    "modules": ["custom/expand-icon", "tray"]
-  },
-  "custom/expand-icon": {
-    "format": " ",
-    "tooltip": false
-  },
+
   "tray": {
     "icon-size": 12,
     "spacing": 12

@@ -26,14 +26,13 @@ Installation, configuration and script's for my linux distro setup.
   - ✅ Workspaces
   - ✅ Clock
   - Calendar
-  - Tray icons
-  - CPU
+  - ✅ Tray icons
+  - ✅ CPU
   - RAM
   - Temperature
-  - Keyboard layout
-  - Network
-  - Bluetooth
-  - Audio
+  - ✅ Network
+  - ✅ Bluetooth
+  - ✅ Audio
   - Battery
   - Gamemode
 - Notifications
