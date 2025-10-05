@@ -51,7 +51,8 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Font viewer (Gnome Font viewer)
 - ✅ Media player control (wpctl and playerctl)
 - ✅ Brightness control (brightnessctl)
-- Screenshot and Screenrecord
+- ✅ Screenshot
+- Screenrecord
 - ✅ File manager (nautilus)
 - ❗ Monitors (kanshi)
 - ❗ Wokspaces for monitor (hypr config for each monitor)
