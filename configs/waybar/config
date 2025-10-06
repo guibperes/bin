@@ -13,12 +13,12 @@
   "modules-right": [
     "tray",
     "gamemode",
-    "bluetooth",
-    "network",
-    "pulseaudio",
     "cpu",
     "memory",
     "temperature",
+    "bluetooth",
+    "network",
+    "pulseaudio",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -37,17 +37,17 @@
   },
   "cpu": {
     "interval": 5,
-    "format": "󰍛",
+    "format": "󰍛 {usage}%",
     "on-click": "kitty -e btop"
   },
   "memory": {
     "interval": 5,
-    "format": "",
+    "format": " {percentage}%",
     "on-click": "kitty -e btop"
   },
   "temperature": {
     "interval": 5,
-    "format": "",
+    "format": " {temperatureC}°C",
     "on-click": "kitty -e btop"
   },
   "network": {
@@ -120,7 +120,7 @@
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "kitty --class=Wiremix -e wiremix",
-    "on-click-right": "akira-audio-volume-toggle-mute",
+    "on-click-right": "akira-audio volume-toggle",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
     "format-muted": "",
@@ -137,9 +137,6 @@
     "spacing": 12
   },
   "gamemode": {
-    "format": "{glyph}",
-    "glyph": "󰺵",
-    "hide-not-running": true,
-    "use-icon": false
+    "format": "{glyph} {count}"
   }
 }

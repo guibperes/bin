@@ -34,7 +34,7 @@ Installation, configuration and script's for my linux distro setup.
   - ✅ Bluetooth
   - ✅ Audio
   - ✅ Battery
-  - Gamemode
+  - ✅ Gamemode
 - Notifications
 - ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
 - ✅ Application launcher (wofi)

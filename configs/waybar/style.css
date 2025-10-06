@@ -29,16 +29,18 @@ window#waybar {
   padding: 0 10px;
 }
 
+#gamemode {
+  padding: 0 5px;
+}
+
 #battery,
 #network,
 #pulseaudio,
 #cpu,
 #bluetooth,
 #memory,
-#temperature,
-#gamemode {
+#temperature {
   padding: 0 10px;
-  font-size: 16px;
 }
 
 #clock:hover,
@@ -52,9 +54,5 @@ window#waybar {
 #gamemode:hover {
   background: #414868;
   border-radius: 0px;
-}
-
-#gamemode.running {
-  color: #9ECE6A;
 }
 
