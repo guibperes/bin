@@ -1,11 +1,11 @@
 * {
   font-family: JetBrainsMono Nerd Font Mono, monospace;
   font-size: 12px;
-  color: #C0CAF5; /* Light text */
+  color: #C0CAF5;
 }
 
 window#waybar {
-  background-color: #1A1B26; /* Dark background */
+  background-color: #1A1B26;
 }
 
 #workspaces button {
@@ -16,12 +16,12 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background: #F7768E; /* Red neon for active */
+  background: #F7768E;
   color: #1A1B26;
 }
 
 #workspaces button:hover {
-  background: #7DCFFF; /* Cyan hover */
+  background: #7DCFFF;
   color: #1A1B26;
 }
 
@@ -35,7 +35,8 @@ window#waybar {
 #cpu,
 #bluetooth,
 #memory,
-#temperature {
+#temperature,
+#gamemode {
   padding: 0 10px;
   font-size: 16px;
 }
@@ -47,8 +48,13 @@ window#waybar {
 #cpu:hover,
 #bluetooth:hover,
 #memory:hover,
-#temperature:hover {
+#temperature:hover,
+#gamemode:hover {
   background: #414868;
   border-radius: 0px;
+}
+
+#gamemode.running {
+  color: #9ECE6A;
 }
 

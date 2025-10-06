@@ -12,6 +12,7 @@
   ],
   "modules-right": [
     "tray",
+    "gamemode",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -134,5 +135,11 @@
   "tray": {
     "icon-size": 12,
     "spacing": 12
+  },
+  "gamemode": {
+    "format": "{glyph}",
+    "glyph": "󰺵",
+    "hide-not-running": true,
+    "use-icon": false
   }
 }
