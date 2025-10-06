@@ -1,0 +1,16 @@
+#!/bin/bash
+
+OPERATION_TYPE=$1 # up, down
+
+case "$OPERATION_TYPE" in
+up)
+  brightnessctl set 5%+
+  ;;
+down)
+  brightnessctl set 5%-
+  ;;
+*)
+  echo "Unknow operation type"
+  exit 1
+  ;;
+esac
