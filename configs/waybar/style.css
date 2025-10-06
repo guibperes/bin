@@ -29,8 +29,13 @@ window#waybar {
   padding: 0 10px;
 }
 
+#tray,
 #gamemode {
   padding: 0 5px;
+}
+
+#tray:hover {
+  background: none;
 }
 
 #battery,
