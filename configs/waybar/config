@@ -4,8 +4,12 @@
   "position": "top",
   "spacing": 0,
   "height": 35,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "tray",
     "bluetooth",
@@ -14,12 +18,10 @@
     "cpu",
     "battery"
   ],
-
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{name}"
   },
-
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B %Y}",
@@ -30,15 +32,19 @@
       "on-scroll": 1
     }
   },
-
   "cpu": {
     "interval": 5,
     "format": "󰍛",
     "on-click": "kitty -e btop"
   },
-
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -50,15 +56,36 @@
     "spacing": 1,
     "on-click": "kitty --class=Network -e impala"
   },
-
   "battery": {
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
     "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
     },
     "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
@@ -70,7 +97,6 @@
       "critical": 10
     }
   },
-
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
@@ -78,7 +104,6 @@
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "kitty --class=Bluetooth -e bluetui"
   },
-
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "kitty --class=Wiremix -e wiremix",
@@ -87,10 +112,13 @@
     "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     }
   },
-
   "tray": {
     "icon-size": 12,
     "spacing": 12
