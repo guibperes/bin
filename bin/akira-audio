@@ -1,0 +1,31 @@
+#!/bin/bash
+
+OPERATION_TYPE=$1 #volume-up, volume-down, volume-toggle, mic-toggle, play-next, play-prev, play-pause
+
+case "$OPERATION_TYPE" in
+volume-up)
+  wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+  ;;
+volume-down)
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+  ;;
+volume-toggle)
+  wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+  ;;
+mic-toggle)
+  wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+  ;;
+play-next)
+  playerctl next
+  ;;
+play-prev)
+  playerctl previous
+  ;;
+play-pause)
+  playerctl play-pause
+  ;;
+*)
+  echo "Unknow operation type"
+  exit 1
+  ;;
+esac
