@@ -60,7 +60,7 @@ Installation, configuration and script's for my linux distro setup.
 - Power profiles and battery status
 - ✅ About (fastfetch)
 - ✅ Git configuration ans aliases
-- power off, reboot shortcuts
+- ✅ power off, reboot shortcuts (syspower)
 - ssh key manager to avoid multiple password typing
 - ✅ Wallpaper (hyprpaper)
 - Notebook lid open/close
