@@ -1,22 +1,13 @@
 #!/bin/bash
 
 echo -e "# Copying configuration files"
-mkdir -p \
-  $HOME_CONFIG_PATH/fastfetch \
-  $HOME_CONFIG_PATH/fish \
-  $HOME_CONFIG_PATH/hypr \
-  $HOME_CONFIG_PATH/kitty \
-  $HOME_CONFIG_PATH/kitty/themes \
-  $HOME_CONFIG_PATH/mpv \
-  $HOME_CONFIG_PATH/spotify-player \
-  $HOME_CONFIG_PATH/waybar \
-  $HOME_CONFIG_PATH/wofi \
-  $HOME/Pictures/wallpapers
+mkdir -p $HOME/Pictures/wallpapers
 
 cp -r \
   $AKIRA_CONFIG_PATH/fastfetch \
   $AKIRA_CONFIG_PATH/fish \
   $AKIRA_CONFIG_PATH/hypr \
+  $AKIRA_CONFIG_PATH/kanshi \
   $AKIRA_CONFIG_PATH/kitty \
   $AKIRA_CONFIG_PATH/mpv \
   $AKIRA_CONFIG_PATH/spotify-player \
