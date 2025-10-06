@@ -16,6 +16,7 @@
     "network",
     "pulseaudio",
     "cpu",
+    "memory",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -35,6 +36,11 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
+    "on-click": "kitty -e btop"
+  },
+  "memory": {
+    "interval": 5,
+    "format": "",
     "on-click": "kitty -e btop"
   },
   "network": {

@@ -29,12 +29,23 @@ window#waybar {
   padding: 0 10px;
 }
 
-#battery, #network, #pulseaudio, #cpu, #bluetooth {
+#battery,
+#network,
+#pulseaudio,
+#cpu,
+#bluetooth,
+#memory {
   padding: 0 10px;
   font-size: 16px;
 }
 
-#clock:hover, #battery:hover, #network:hover, #pulseaudio:hover, #cpu:hover, #bluetooth:hover {
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#bluetooth:hover,
+#memory:hover {
   background: #414868;
   border-radius: 0px;
 }
