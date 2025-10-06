@@ -28,12 +28,12 @@ Installation, configuration and script's for my linux distro setup.
   - Calendar
   - ✅ Tray icons
   - ✅ CPU
-  - RAM
-  - Temperature
+  - ✅ RAM
+  - ✅ Temperature
   - ✅ Network
   - ✅ Bluetooth
   - ✅ Audio
-  - Battery
+  - ✅ Battery
   - Gamemode
 - Notifications
 - ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
