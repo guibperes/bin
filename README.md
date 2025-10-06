@@ -63,4 +63,4 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ power off, reboot shortcuts (syspower)
 - ssh key manager to avoid multiple password typing
 - ✅ Wallpaper (hyprpaper)
-- Notebook lid open/close
+- ❗ Notebook lid open/close (hyprland config)
