@@ -17,6 +17,7 @@
     "pulseaudio",
     "cpu",
     "memory",
+    "temperature",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -41,6 +42,11 @@
   "memory": {
     "interval": 5,
     "format": "",
+    "on-click": "kitty -e btop"
+  },
+  "temperature": {
+    "interval": 5,
+    "format": "",
     "on-click": "kitty -e btop"
   },
   "network": {

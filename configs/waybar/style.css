@@ -34,7 +34,8 @@ window#waybar {
 #pulseaudio,
 #cpu,
 #bluetooth,
-#memory {
+#memory,
+#temperature {
   padding: 0 10px;
   font-size: 16px;
 }
@@ -45,7 +46,8 @@ window#waybar {
 #pulseaudio:hover,
 #cpu:hover,
 #bluetooth:hover,
-#memory:hover {
+#memory:hover,
+#temperature:hover {
   background: #414868;
   border-radius: 0px;
 }
