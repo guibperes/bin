@@ -13,7 +13,7 @@ Installation, configuration and script's for my linux distro setup.
   - ✅ Hyperland
   - GTK and Gnome
   - ✅ wofi
-  - waybar
+  - ✅ waybar
   - flatpak
   - btop
   - chromium
@@ -22,10 +22,10 @@ Installation, configuration and script's for my linux distro setup.
 - Akira: README description
 - ✅ Device firmware update (fwupd)
 - ✅ Task manager (btop)
-- Top bar (Waybar)
+- ✅ Top bar (Waybar)
   - ✅ Workspaces
   - ✅ Clock
-  - Calendar
+  - ✅ Calendar
   - ✅ Tray icons
   - ✅ CPU
   - ✅ RAM
