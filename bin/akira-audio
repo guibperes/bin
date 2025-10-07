@@ -2,12 +2,19 @@
 
 OPERATION_TYPE=$1 #volume-up, volume-down, volume-toggle, mic-toggle, play-next, play-prev, play-pause
 
+volume_notify () {
+  VOLUME_VALUE=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9.]*//g' | awk '{print $1 * 100}')
+  dunstify -a "Volume" -u low -r 1001 -h int:value:$VOLUME_VALUE -i audio-volume-high "Volume"
+}
+
 case "$OPERATION_TYPE" in
 volume-up)
   wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+  volume_notify
   ;;
 volume-down)
   wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+  volume_notify
   ;;
 volume-toggle)
   wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle

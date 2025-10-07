@@ -35,7 +35,7 @@ Installation, configuration and script's for my linux distro setup.
   - ✅ Audio
   - ✅ Battery
   - ✅ Gamemode
-- Notifications
+- ✅ Notifications
 - ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
 - ✅ Application launcher (wofi)
 - ✅ Screensaver and Lockscreen (hyprlock)
