@@ -4,6 +4,7 @@ echo -e "# Copying configuration files"
 mkdir -p $HOME/Pictures/wallpapers
 
 cp -r \
+  $AKIRA_CONFIG_PATH/calcure \
   $AKIRA_CONFIG_PATH/fastfetch \
   $AKIRA_CONFIG_PATH/fish \
   $AKIRA_CONFIG_PATH/hypr \
