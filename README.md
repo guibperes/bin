@@ -51,7 +51,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ polkit agent (hyprpolkitagent)
 - ✅ Wallpaper (hyprpaper)
 - ✅ Tasks and TODO (task and taskwarrior)
-- LaTeX support
+- ✅ LaTeX support
 - Akira: README description
 - ❗ Monitors (kanshi)
 - ❗ Wokspaces for monitor (hypr config for each monitor)
