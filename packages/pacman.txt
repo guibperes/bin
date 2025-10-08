@@ -40,6 +40,8 @@ playerctl
 brightnessctl
 bluetui
 btop
+task
+taskwarrior-tui
 docker
 docker-compose
 wine
