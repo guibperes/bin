@@ -17,6 +17,7 @@ Installation, configuration and script's for my linux distro setup.
   - flatpak
   - btop
   - chromium
+  - task and taskwarrior
 - ✅ Akira: logo
 - Akira: Bootscreen
 - Akira: README description
@@ -64,3 +65,4 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ polkit agent (hyprpolkitagent)
 - ✅ Wallpaper (hyprpaper)
 - ❗ Notebook lid open/close (hyprland config)
+- Tasks and TODO (task and taskwarrior)
