@@ -2,25 +2,17 @@
 
 Installation, configuration and script's for my linux distro setup.
 
-## TODO: Hyperland setup and configuration
+## Akira v1
 
 - ✅ Hyperland file
 - ✅ Hyperland: Remove packages installed from archinstall
 - ✅ Hyperland: Gnome and GTK softwares support
-- Akira: themes
+- ✅ Akira: themes
   - ✅ kitty
-  - nvim and lazyvim
   - ✅ Hyperland
-  - GTK and Gnome
   - ✅ wofi
   - ✅ waybar
-  - flatpak
-  - btop
-  - chromium
-  - task and taskwarrior
 - ✅ Akira: logo
-- Akira: Bootscreen
-- Akira: README description
 - ✅ Device firmware update (fwupd)
 - ✅ Task manager (btop)
 - ✅ Top bar (Waybar)
@@ -37,7 +29,6 @@ Installation, configuration and script's for my linux distro setup.
   - ✅ Battery
   - ✅ Gamemode
 - ✅ Notifications
-- ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
 - ✅ Application launcher (wofi)
 - ✅ Screensaver and Lockscreen (hyprlock)
 - ✅ Icon theme (Papirus)
@@ -52,17 +43,30 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Media player control (wpctl and playerctl)
 - ✅ Brightness control (brightnessctl)
 - ✅ Screenshot
-- Screenrecord
 - ✅ File manager (nautilus)
-- ❗ Monitors (kanshi)
-- ❗ Wokspaces for monitor (hypr config for each monitor)
 - ✅ Emoji selector
-- Helper to show all keybinds
-- Power profiles and battery status
 - ✅ About (fastfetch)
 - ✅ Git configuration ans aliases
 - ✅ power off, reboot shortcuts (syspower)
 - ✅ polkit agent (hyprpolkitagent)
 - ✅ Wallpaper (hyprpaper)
+- ✅ Tasks and TODO (task and taskwarrior)
+- LaTeX support
+- Akira: README description
+- ❗ Monitors (kanshi)
+- ❗ Wokspaces for monitor (hypr config for each monitor)
+- ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
 - ❗ Notebook lid open/close (hyprland config)
-- Tasks and TODO (task and taskwarrior)
+
+## Akira v2
+
+- Akira: themes
+  - nvim and lazyvim
+  - GTK and Gnome
+  - flatpak
+  - btop
+  - chromium
+- Power profiles and battery status
+- Helper to show all keybinds
+- Screenrecord
+- Akira: Bootscreen
