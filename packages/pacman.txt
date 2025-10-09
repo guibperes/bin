@@ -35,6 +35,7 @@ fastfetch
 spotify-player
 mise
 texlive
+texlive-langportuguese
 impala
 wiremix
 playerctl
