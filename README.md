@@ -54,8 +54,7 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ LaTeX support
 - Akira: README description
 - ✅ Monitors (kanshi)
-- Wokspaces for monitor (hypr config for each monitor)
-- ✅ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
+- ✅ Keyboard layout setup: US, intl and BR (hypr config for each input device)
 - ✅ Notebook lid open/close (hyprland config)
 
 ## Akira v2
