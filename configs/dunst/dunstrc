@@ -97,7 +97,7 @@
     background = "#1A1B26"
     foreground = "#C0CAF5"
     timeout = 5
-    override_pause_level = 30
+    override_pause_level = 5
     default_icon = dialog-information
 
 [urgency_critical]

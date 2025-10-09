@@ -7,16 +7,17 @@
 window {
   background-color: #1A1B26;
   color: #C0CAF5;
-  border: 1px solid #F7768E; /* Red neon border */
+  border: 2px solid #F7768E; /* Red neon border */
   font-family: JetBrainsMono Nerd Font Mono, monospace;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Input field */
 #input {
   background-color: #1A1B26;
   color: #C0CAF5;
-  border: 1px solid #F7768E;
+  border: 2px solid #F7768E;
   border-radius: 0px;
   padding: 5px;
 }
@@ -29,7 +30,7 @@ window {
 #entry {
   background-color: transparent;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
 }
 
 #entry:selected {
@@ -53,6 +54,6 @@ scrollbar slider:hover {
 }
 
 image {
-  margin: 5px;
+  margin: 10px;
 }
 

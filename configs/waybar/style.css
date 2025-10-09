@@ -7,6 +7,7 @@
 
 window#waybar {
   background-color: #1A1B26;
+  padding: 10px;
 }
 
 #workspaces button {
@@ -26,10 +27,6 @@ window#waybar {
   color: #1A1B26;
 }
 
-#clock {
-  padding: 0 15px;
-}
-
 #tray,
 #gamemode {
   padding: 0 5px;
@@ -45,7 +42,8 @@ window#waybar {
 #cpu,
 #bluetooth,
 #memory,
-#temperature {
+#temperature,
+#clock {
   padding: 0 15px;
 }
 
