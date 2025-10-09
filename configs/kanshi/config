@@ -1,8 +1,30 @@
-# Kanshi monitors configuration with profiles
-# profile {
-#   output eDP-1 mode 1920x1080@60Hz position 0,0
-#   output HDMI-A-1 mode 1920x1080@60Hz position 1920,0
-# }
-# profile {
-#   output eDP-1 mode 1920x1080@60Hz position 0,0
-# }
+output "AU Optronics 0xED8F Unknown" {
+  mode 1920x1080@120.21
+  position 0,0
+  scale 1
+  alias $INTERNAL
+}
+
+output "LG Electronics 27GN7 0x00008E27" {
+  mode 1920x1080@240
+  position 1920,0
+  scale 1
+  alias $LG
+}
+
+output "AOC 2460G5 0x00000B61" {
+  mode 1920x1080@74.99
+  position 0,0
+  scale 1
+  alias $AOC
+}
+
+profile internal {
+  output $INTERNAL enable
+}
+
+profile docked {
+  output $LG enable
+  output $AOC enable
+  output $INTERNAL disable
+}
