@@ -48,6 +48,7 @@ docker
 docker-compose
 wine
 gamemode
+gamescope
 hplip
 piper
 simple-scan
