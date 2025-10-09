@@ -1,7 +1,8 @@
 * {
-  font-family: JetBrainsMono Nerd Font Mono, monospace;
-  font-size: 12px;
+  font-family: JetBrainsMono Nerd Font, monospace;
   color: #C0CAF5;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 window#waybar {
@@ -26,7 +27,7 @@ window#waybar {
 }
 
 #clock {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 #tray,
@@ -45,7 +46,7 @@ window#waybar {
 #bluetooth,
 #memory,
 #temperature {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 #clock:hover,
