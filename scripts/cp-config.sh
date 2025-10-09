@@ -15,6 +15,7 @@ cp -r \
   $AKIRA_CONFIG_PATH/spotify-player \
   $AKIRA_CONFIG_PATH/waybar \
   $AKIRA_CONFIG_PATH/wofi \
+  $AKIRA_CONFIG_PATH/xdg-desktop-portal \
   $AKIRA_CONFIG_PATH/starship.toml \
   $HOME_CONFIG_PATH
 
