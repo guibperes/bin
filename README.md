@@ -53,10 +53,10 @@ Installation, configuration and script's for my linux distro setup.
 - ✅ Tasks and TODO (task and taskwarrior)
 - ✅ LaTeX support
 - Akira: README description
-- ❗ Monitors (kanshi)
-- ❗ Wokspaces for monitor (hypr config for each monitor)
-- ❗ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
-- ❗ Notebook lid open/close (hyprland config)
+- ✅ Monitors (kanshi)
+- Wokspaces for monitor (hypr config for each monitor)
+- ✅ Keyboard layout setup: US, alt. intl.; US; BR (hypr config for each input device)
+- ✅ Notebook lid open/close (hyprland config)
 
 ## Akira v2
 

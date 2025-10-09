@@ -1,6 +1,5 @@
 minecraft-launcher
 onlyoffice-bin
-displaylink
 tokyonight-gtk-theme-git
 wofi-emoji
 syspower
