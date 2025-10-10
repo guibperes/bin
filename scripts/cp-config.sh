@@ -21,3 +21,6 @@ cp -r \
 
 cp $AKIRA_CONFIG_PATH/.XCompose $HOME/.XCompose
 cp $AKIRA_DIR_PATH/assets/akira_wallpaper.jpg $HOME/Pictures/wallpapers
+
+echo -e "# Copying root files with sudo"
+sudo cp -r $AKIRA_CONFIG_PATH/systemd/sleep.conf.d /etc/systemd
