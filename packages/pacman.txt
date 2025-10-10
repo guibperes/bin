@@ -36,6 +36,7 @@ spotify-player
 mise
 texlive
 texlive-langportuguese
+biber
 impala
 wiremix
 playerctl
