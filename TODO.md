@@ -35,7 +35,7 @@
 - ✅ Bluetooth (bluetui)
 - ✅ Audio (wiremix)
 - ✅ Calculator (Gnome Calculator)
-- ✅ PDF viewer (Papirus)
+- ✅ PDF viewer (Papers)
 - ✅ Image viewer (Loupe)
 - ✅ Font viewer (Gnome Font viewer)
 - ✅ Media player control (wpctl and playerctl)

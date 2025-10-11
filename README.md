@@ -32,10 +32,30 @@ The Akira visual identity blends **modern minimalism** with **cyberpunk underton
 | Component | Description |
 |------------|-------------|
 | **Hyprland** | Wayland compositor providing tiling, smooth animations, and full keyboard control. |
-| **Kitty** | Themed terminal emulator using Akira’s custom color scheme. |
-| **Waybar** | Lightweight status bar following the Akira palette and layout. |
-| **Ly** | Minimal TUI login manager themed in Akira’s style. |
-| **Hyprlock** | Screen locker with transparent overlays and Akira’s typography. |
+| **Hyprlock** | Screen locker. |
+| **Kitty** | Terminal emulator. |
+| **Waybar** | Lightweight status bar. |
+| **Ly** | Minimal TUI login manager. |
+| Wofi | |
+| Btop | |
+| Dunst | |
+| Papirus Dark icon | |
+| iwd and impala | |
+| bluetui | |
+| wiremix | |
+| Gnome Calculator | |
+| Papers PDF | |
+| Loupe img | |
+| Gnome Font Viewer | |
+| wpctl and playerctl | |
+| brightnessctl | |
+| Nautilus | |
+| Wofi emoji | |
+| fastfetch | |
+| hyprpaper | |
+| taskwarrior | |
+| kanshi monitor | |
+| grim and slurp screenshot | |
 
 ### 🌈 Color Palette
 
