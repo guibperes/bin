@@ -2,11 +2,10 @@ com.valvesoftware.Steam
 com.discordapp.Discord
 org.gimp.GIMP
 fr.handbrake.ghb
-org.gnome.World.Secrets
 de.haeckerfelix.Fragments
 md.obsidian.Obsidian
 org.gnome.Firmware
-org.gtk.Gtk3theme.Adwaita-dark
 com.github.Matoking.protontricks
 io.github.flattool.Warehouse
 io.gitlab.news_flash.NewsFlash
+org.gtk.Gtk3theme.Adwaita-dark

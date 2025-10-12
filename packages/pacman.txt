@@ -58,8 +58,11 @@ nautilus
 gnome-calculator
 papers
 gnome-font-viewer
+secrets
 loupe
 nwg-look
+zathura
+zathura-pdf-poppler
 noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk
