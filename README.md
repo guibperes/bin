@@ -33,29 +33,35 @@ The Akira visual identity blends **modern minimalism** with **cyberpunk underton
 |------------|-------------|
 | **Hyprland** | Wayland compositor providing tiling, smooth animations, and full keyboard control. |
 | **Hyprlock** | Screen locker. |
-| **Kitty** | Terminal emulator. |
-| **Waybar** | Lightweight status bar. |
+| **Hyprpaper** | Desktop wallpaper. |
+| **Hypridle** | Idle management daemon. |
+| **Hyprlock** | Lockscreen. |
+| **Dunst** | Notification daemon. |
+| **Grim** and **Slurp** | Screenshot application. |
+| **iwd** and **impala** | Network and WiFi management. |
+| **Kanshi** | Monitor profile management. |
 | **Ly** | Minimal TUI login manager. |
-| Wofi | |
-| Btop | |
-| Dunst | |
-| Papirus Dark icon | |
-| iwd and impala | |
-| bluetui | |
-| wiremix | |
-| Gnome Calculator | |
-| Papers PDF | |
-| Loupe img | |
-| Gnome Font Viewer | |
-| wpctl and playerctl | |
-| brightnessctl | |
-| Nautilus | |
-| Wofi emoji | |
-| fastfetch | |
-| hyprpaper | |
-| taskwarrior | |
-| kanshi monitor | |
-| grim and slurp screenshot | |
+| **Waybar** | Lightweight status bar. |
+| **Wofi** | Application launcher. |
+| **Wofi emoji** | Emoji selector. |
+| **Fish** | Command line shell. |
+| **Kitty** | Terminal emulator. |
+| **wpctl** and **playerctl** | Audio keyboard management shortcuts. |
+| **brightnessctl** | Brightness keyboard management. |
+| **fastfetch** | System information list. |
+| **Btop** | System monitor. |
+| **bluetui** | Bluetooth management. |
+| **wiremix** | Audio management. |
+| **taskwarrior** | Tasks and projects management. |
+| **calcure** | Calendar. |
+| **mpv** | Video Player. |
+| **spotify-player** | Spotify TUI application. |
+| **Papirus Dark** | Icon theme. |
+| **Nautilus** | File manager. |
+| **Gnome Calculator** | Calculator application. |
+| **Papers** | PDF Viewer. |
+| **Loupe** | Image viewer. |
+| **Gnome Font Viewer** | Font viewer. |
 
 ### 🌈 Color Palette
 
