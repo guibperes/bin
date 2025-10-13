@@ -55,6 +55,7 @@ piper
 simple-scan
 chromium
 nautilus
+sushi
 gnome-calculator
 papers
 gnome-font-viewer
