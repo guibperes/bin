@@ -1,0 +1,27 @@
+#!/bin/bash
+
+ACTION=$1 # pause-toggle, get-icon, get-paused
+
+case "$ACTION" in
+pause-toggle)
+  dunstctl set-paused toggle
+  ;;
+get-paused)
+  dunstctl is-paused
+  ;;
+get-icon)
+  ICON_ENABLED="󰂚"
+  ICON_DISABLED="󰂛"
+  IS_PAUSED=$(dunstctl is-paused)
+
+  if [[ $IS_PAUSED == "true" ]]; then
+    echo $ICON_DISABLED
+  else
+    echo $ICON_ENABLED
+  fi
+  ;;
+*)
+  echo "Unknow operation type"
+  exit 1
+  ;;
+esac
