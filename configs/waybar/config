@@ -65,10 +65,9 @@
     "on-click": "kitty --class=Network -e impala"
   },
   "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{icon}",
-    "format-charging": "{icon}",
+    "format": "{icon} {capacity}%",
     "format-plugged": "",
+    "format-full": "󰂅",
     "format-icons": {
       "charging": [
         "󰢜",
@@ -95,7 +94,6 @@
         "󰁹"
       ]
     },
-    "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
     "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
     "interval": 5,
